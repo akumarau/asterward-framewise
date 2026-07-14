@@ -29,7 +29,7 @@ class LocationResult:
         return ", ".join([p for p in parts if p])
 
 
-def _normalise_location_text(text: str) -> str:
+def _normalize_location_text(text: str) -> str:
     return " ".join("".join(ch if ch.isalnum() else " " for ch in text.lower()).split())
 
 
@@ -42,7 +42,7 @@ def load_known_locations(path: Path = KNOWN_LOCATIONS_PATH) -> list[dict[str, An
 
 def known_location_candidates(query: str, path: Path = KNOWN_LOCATIONS_PATH, limit: int = 5) -> list[LocationResult]:
     """Return fallback location candidates from local known landmarks."""
-    normalised_query = _normalise_location_text(query)
+    normalised_query = _normalize_location_text(query)
     if not normalised_query:
         return []
 
@@ -50,7 +50,7 @@ def known_location_candidates(query: str, path: Path = KNOWN_LOCATIONS_PATH, lim
     for item in load_known_locations(path):
         aliases = item.get("aliases", [])
         names = [item.get("name", ""), item.get("admin1", ""), item.get("country", ""), *aliases]
-        normalised_names = [_normalise_location_text(name) for name in names if name]
+        normalised_names = [_normalize_location_text(name) for name in names if name]
 
         score = 0
         if any(normalised_query == name for name in normalised_names):

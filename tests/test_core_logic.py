@@ -41,7 +41,7 @@ def test_sony_a7r_vi_spacing_lookup():
 def test_ambiguous_camera_candidates_ranked():
     candidates = camera_match_candidates("sony a7r")
     assert candidates
-    assert candidates[0]["display_name"] in {"Sony Alpha 7R V", "Sony Alpha 7R VI"}
+    assert candidates[0]["display_name"] == "Sony Alpha 7R V"
     assert candidates[0]["confidence"] in {"medium", "high"}
 
 

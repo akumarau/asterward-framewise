@@ -30,8 +30,8 @@ def _compact_key(text: str) -> str:
 
 
 def _token_score(query: str, candidate: str) -> int:
-    query_tokens = {token for token in query.split() if len(token) > 1}
-    candidate_tokens = {token for token in candidate.split() if len(token) > 1}
+    query_tokens = {token.lower() for token in query.split() if len(token) > 1}
+    candidate_tokens = {token.lower() for token in candidate.split() if len(token) > 1}
     if not query_tokens or not candidate_tokens:
         return 0
     overlap = len(query_tokens & candidate_tokens)

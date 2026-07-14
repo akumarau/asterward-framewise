@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+import requests
 import streamlit as st
 
 from utils.camera_specs import camera_match_candidates, resolution_summary
@@ -76,7 +77,7 @@ def _analyse_inputs(subject_rules: dict[str, dict[str, Any]]) -> None:
     if values["location_query"].strip():
         try:
             geocoded = geocode_location(values["location_query"])
-        except Exception as exc:
+        except (requests.RequestException, ValueError) as exc:
             geocoded = []
             geocode_error = str(exc)
     fallback = known_location_candidates(values["location_query"], limit=5) if values["location_query"].strip() else []
@@ -136,7 +137,7 @@ def _render_final_plan() -> None:
     if selected_location:
         try:
             weather = fetch_weather(selected_location.latitude, selected_location.longitude)
-        except Exception as exc:
+        except (requests.RequestException, ValueError) as exc:
             st.warning(f"Could not fetch weather data: {exc}")
 
     recommendation = build_recommendation(
