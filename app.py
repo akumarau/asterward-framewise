@@ -19,6 +19,8 @@ from utils.weather import (
 
 APP_DIR = Path(__file__).resolve().parent
 DEFAULT_KIT = json.loads((APP_DIR / "data" / "default_kit.json").read_text(encoding="utf-8"))
+AUTO_SUBJECT_OPTION = "Auto-detect from text"
+CONFIDENCE_LOW = "low"
 
 
 def _init_state(subject_rules: dict[str, dict[str, Any]]) -> None:
@@ -29,7 +31,7 @@ def _init_state(subject_rules: dict[str, dict[str, Any]]) -> None:
             "manual_height": 0,
             "location_query": "",
             "subject_text": "",
-            "subject_choice": "Auto-detect from text",
+            "subject_choice": AUTO_SUBJECT_OPTION,
             "indoor_outdoor": "Outdoor",
             "walking_level": "Light",
             "carry_style": "Minimalist",
@@ -51,8 +53,8 @@ def _init_state(subject_rules: dict[str, dict[str, Any]]) -> None:
     if "final_data" not in st.session_state:
         st.session_state.final_data = {}
 
-    if st.session_state.inputs.get("subject_choice") not in ["Auto-detect from text", *subject_rules.keys()]:
-        st.session_state.inputs["subject_choice"] = "Auto-detect from text"
+    if st.session_state.inputs.get("subject_choice") not in [AUTO_SUBJECT_OPTION, *subject_rules.keys()]:
+        st.session_state.inputs["subject_choice"] = AUTO_SUBJECT_OPTION
 
 
 def _analyse_inputs(subject_rules: dict[str, dict[str, Any]]) -> None:
@@ -60,8 +62,8 @@ def _analyse_inputs(subject_rules: dict[str, dict[str, Any]]) -> None:
     camera_candidates = camera_match_candidates(values["camera_model"], limit=5)
 
     selected_subject = None
-    subject_confidence = "low"
-    if values["subject_choice"] != "Auto-detect from text":
+    subject_confidence = CONFIDENCE_LOW
+    if values["subject_choice"] != AUTO_SUBJECT_OPTION:
         selected_subject = values["subject_choice"]
         subject_confidence = "high"
     else:
@@ -70,23 +72,26 @@ def _analyse_inputs(subject_rules: dict[str, dict[str, Any]]) -> None:
             subject_confidence = "medium"
 
     geocoded = []
+    geocode_error = None
     if values["location_query"].strip():
         try:
             geocoded = geocode_location(values["location_query"])
-        except Exception:
+        except Exception as exc:
             geocoded = []
+            geocode_error = str(exc)
     fallback = known_location_candidates(values["location_query"], limit=5) if values["location_query"].strip() else []
     location_candidates = merge_location_candidates(geocoded, fallback, limit=5)
 
     st.session_state.review = {
         "camera_candidates": camera_candidates,
         "camera_index": 0,
-        "camera_confidence": camera_candidates[0]["confidence"] if camera_candidates else "low",
+        "camera_confidence": camera_candidates[0]["confidence"] if camera_candidates else CONFIDENCE_LOW,
         "subject": selected_subject,
         "subject_confidence": subject_confidence,
         "location_candidates": location_candidates,
         "location_index": 0,
-        "location_confidence": "high" if len(location_candidates) == 1 else ("medium" if location_candidates else "low"),
+        "location_confidence": "high" if len(location_candidates) == 1 else ("medium" if location_candidates else CONFIDENCE_LOW),
+        "geocode_error": geocode_error,
     }
     st.session_state.camera_accepted = False
     st.session_state.subject_accepted = False
@@ -231,72 +236,87 @@ with st.sidebar:
 
 subject_rules = load_subject_rules()
 _init_state(subject_rules)
+subject_options = [AUTO_SUBJECT_OPTION, *subject_rules.keys()]
+inputs = st.session_state.inputs
 
 st.header("Step 1: Enter shoot details")
 with st.form("inputs_form"):
     col1, col2 = st.columns(2)
     with col1:
-        st.session_state.inputs["camera_model"] = st.text_input(
+        camera_model = st.text_input(
             "Camera model (generic terms supported)",
-            value=st.session_state.inputs["camera_model"],
+            value=inputs["camera_model"],
             placeholder="e.g. sony a7r, canon r5, nikon z",
         )
-        st.session_state.inputs["manual_width"] = st.number_input(
+        manual_width = st.number_input(
             "Manual max image width px (fallback)",
             min_value=0,
-            value=st.session_state.inputs["manual_width"],
+            value=inputs["manual_width"],
             step=1,
         )
-        st.session_state.inputs["manual_height"] = st.number_input(
+        manual_height = st.number_input(
             "Manual max image height px (fallback)",
             min_value=0,
-            value=st.session_state.inputs["manual_height"],
+            value=inputs["manual_height"],
             step=1,
         )
-        st.session_state.inputs["location_query"] = st.text_input(
+        location_query = st.text_input(
             "Location (generic terms supported)",
-            value=st.session_state.inputs["location_query"],
+            value=inputs["location_query"],
             placeholder="e.g. three sisters, sydney, opera house",
         )
     with col2:
-        st.session_state.inputs["subject_text"] = st.text_input(
+        subject_text = st.text_input(
             "Subject keywords (optional)",
-            value=st.session_state.inputs["subject_text"],
+            value=inputs["subject_text"],
             placeholder="e.g. birds, city, portraits",
         )
-        st.session_state.inputs["subject_choice"] = st.selectbox(
+        subject_choice = st.selectbox(
             "Subject override",
-            ["Auto-detect from text", *subject_rules.keys()],
-            index=["Auto-detect from text", *subject_rules.keys()].index(st.session_state.inputs["subject_choice"]),
+            subject_options,
+            index=subject_options.index(inputs["subject_choice"]),
         )
-        st.session_state.inputs["indoor_outdoor"] = st.selectbox(
+        indoor_outdoor = st.selectbox(
             "Venue type",
             ["Outdoor", "Indoor", "Mixed"],
-            index=["Outdoor", "Indoor", "Mixed"].index(st.session_state.inputs["indoor_outdoor"]),
+            index=["Outdoor", "Indoor", "Mixed"].index(inputs["indoor_outdoor"]),
         )
-        st.session_state.inputs["walking_level"] = st.selectbox(
+        walking_level = st.selectbox(
             "Walking distance / mobility",
             ["Light", "Moderate", "Heavy"],
-            index=["Light", "Moderate", "Heavy"].index(st.session_state.inputs["walking_level"]),
+            index=["Light", "Moderate", "Heavy"].index(inputs["walking_level"]),
         )
-        st.session_state.inputs["carry_style"] = st.selectbox(
+        carry_style = st.selectbox(
             "Carry style",
             ["Minimalist", "Balanced", "Maximum quality"],
-            index=["Minimalist", "Balanced", "Maximum quality"].index(st.session_state.inputs["carry_style"]),
+            index=["Minimalist", "Balanced", "Maximum quality"].index(inputs["carry_style"]),
         )
-        st.session_state.inputs["flash_allowed"] = st.checkbox(
+        flash_allowed = st.checkbox(
             "Flash allowed",
-            value=st.session_state.inputs["flash_allowed"],
+            value=inputs["flash_allowed"],
         )
 
-    st.session_state.inputs["lens_text"] = st.text_area(
+    lens_text = st.text_area(
         "Available lenses (one per line or comma-separated)",
-        value=st.session_state.inputs["lens_text"],
+        value=inputs["lens_text"],
         height=150,
     )
     analyse = st.form_submit_button("Analyze matches")
 
 if analyse:
+    st.session_state.inputs = {
+        "camera_model": camera_model,
+        "manual_width": int(manual_width),
+        "manual_height": int(manual_height),
+        "location_query": location_query,
+        "subject_text": subject_text,
+        "subject_choice": subject_choice,
+        "indoor_outdoor": indoor_outdoor,
+        "walking_level": walking_level,
+        "carry_style": carry_style,
+        "flash_allowed": flash_allowed,
+        "lens_text": lens_text,
+    }
     _analyse_inputs(subject_rules)
 
 if st.session_state.workflow_step == "review":
@@ -317,7 +337,7 @@ if st.session_state.workflow_step == "review":
             index=min(review.get("camera_index", 0), len(camera_candidates) - 1),
             format_func=lambda idx: camera_labels[idx],
         )
-        if camera_candidates[review["camera_index"]]["confidence"] == "low":
+        if camera_candidates[review["camera_index"]]["confidence"] == CONFIDENCE_LOW:
             st.warning("Low-confidence camera match. Please choose another option or edit camera input.")
         c1, c2, c3 = st.columns(3)
         if c1.button("Accept match", key="accept_camera"):
@@ -344,7 +364,7 @@ if st.session_state.workflow_step == "review":
     if review.get("subject"):
         st.write(
             f"Detected subject: **{review['subject']}** "
-            f"(confidence: **{review.get('subject_confidence', 'low')}**)"
+            f"(confidence: **{review.get('subject_confidence', CONFIDENCE_LOW)}**)"
         )
         s1, s2, s3 = st.columns(3)
         if s1.button("Accept subject", key="accept_subject"):
@@ -360,6 +380,8 @@ if st.session_state.workflow_step == "review":
     st.subheader("Detected location")
     location_candidates = review.get("location_candidates", [])
     if st.session_state.inputs["location_query"].strip():
+        if review.get("geocode_error"):
+            st.info(f"Live geocoding was unavailable: {review['geocode_error']}. Showing fallback/local matches when possible.")
         if location_candidates:
             location_labels = [f"{item.label} ({item.latitude:.5f}, {item.longitude:.5f})" for item in location_candidates]
             review["location_index"] = st.selectbox(
@@ -389,13 +411,13 @@ if st.session_state.workflow_step == "review":
     else:
         st.write("No location provided. Weather will be skipped.")
 
-    all_confirmed = (
+    all_inputs_confirmed = (
         st.session_state.camera_accepted
         and st.session_state.subject_accepted
         and st.session_state.location_accepted
     )
 
-    if all_confirmed:
+    if all_inputs_confirmed:
         st.success("All required inputs are accepted.")
         if st.button("Build final shoot plan", key="build_final"):
             st.session_state.final_ready = True

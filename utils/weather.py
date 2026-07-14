@@ -33,7 +33,10 @@ def _normalise_location_text(text: str) -> str:
 
 
 def load_known_locations(path: Path = KNOWN_LOCATIONS_PATH) -> list[dict[str, Any]]:
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
 
 
 def known_location_candidates(query: str, path: Path = KNOWN_LOCATIONS_PATH, limit: int = 5) -> list[LocationResult]:
@@ -57,19 +60,18 @@ def known_location_candidates(query: str, path: Path = KNOWN_LOCATIONS_PATH, lim
             score = 70
 
         if score > 0:
-            scored.append(
-                (
-                    score,
-                    LocationResult(
-                        name=item.get("name", "Unknown"),
-                        country=item.get("country", ""),
-                        admin1=item.get("admin1"),
-                        latitude=float(item["latitude"]),
-                        longitude=float(item["longitude"]),
-                        timezone=item.get("timezone"),
-                    ),
+            try:
+                location = LocationResult(
+                    name=item.get("name", "Unknown"),
+                    country=item.get("country", ""),
+                    admin1=item.get("admin1"),
+                    latitude=float(item["latitude"]),
+                    longitude=float(item["longitude"]),
+                    timezone=item.get("timezone"),
                 )
-            )
+            except (KeyError, TypeError, ValueError):
+                continue
+            scored.append((score, location))
 
     scored.sort(key=lambda row: row[0], reverse=True)
     return [location for _, location in scored[:limit]]
