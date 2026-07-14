@@ -1,5 +1,6 @@
-from utils.camera_specs import find_camera_spec, resolution_summary
-from utils.gear_recommender import match_lenses_for_subject, parse_lenses
+from utils.camera_specs import camera_match_candidates, find_camera_spec, resolution_summary
+from utils.gear_recommender import match_lenses_for_subject, normalize_subject_term, parse_lenses
+from utils.weather import LocationResult, known_location_candidates, merge_location_candidates
 
 
 def test_camera_alias_lookup():
@@ -35,3 +36,41 @@ def test_sony_a7r_vi_spacing_lookup():
     spec = find_camera_spec("Sony A7 R6")
     assert spec is not None
     assert spec["display_name"] == "Sony Alpha 7R VI"
+
+
+def test_ambiguous_camera_candidates_ranked():
+    candidates = camera_match_candidates("sony a7r")
+    assert candidates
+    assert candidates[0]["display_name"] in {"Sony Alpha 7R V", "Sony Alpha 7R VI"}
+    assert candidates[0]["confidence"] in {"medium", "high"}
+
+
+def test_location_fallback_and_disambiguation_merge():
+    fallback = known_location_candidates("three sisters")
+    assert fallback
+    geocoded = [
+        LocationResult(
+            name="Three Sisters Walk",
+            country="Australia",
+            admin1="New South Wales",
+            latitude=-33.732109,
+            longitude=150.312042,
+            timezone="Australia/Sydney",
+        ),
+        LocationResult(
+            name="Sydney",
+            country="Australia",
+            admin1="New South Wales",
+            latitude=-33.8688,
+            longitude=151.2093,
+            timezone="Australia/Sydney",
+        ),
+    ]
+    merged = merge_location_candidates(geocoded=geocoded, fallback=fallback, limit=5)
+    assert len(merged) == 2
+    assert merged[0].name == "Three Sisters Walk"
+
+
+def test_subject_synonym_mapping():
+    assert normalize_subject_term("birds") == "Wildlife / Birds"
+    assert normalize_subject_term("city walk") == "Street / Travel"

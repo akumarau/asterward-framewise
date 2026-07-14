@@ -1,13 +1,16 @@
 """Open-Meteo geocoding and weather helpers."""
 from __future__ import annotations
 
+import json
 import requests
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 
 GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"
 FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
+KNOWN_LOCATIONS_PATH = Path(__file__).resolve().parents[1] / "data" / "known_locations.json"
 
 
 @dataclass
@@ -23,6 +26,72 @@ class LocationResult:
     def label(self) -> str:
         parts = [self.name, self.admin1, self.country]
         return ", ".join([p for p in parts if p])
+
+
+def _normalise_location_text(text: str) -> str:
+    return " ".join("".join(ch if ch.isalnum() else " " for ch in text.lower()).split())
+
+
+def load_known_locations(path: Path = KNOWN_LOCATIONS_PATH) -> list[dict[str, Any]]:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def known_location_candidates(query: str, path: Path = KNOWN_LOCATIONS_PATH, limit: int = 5) -> list[LocationResult]:
+    """Return fallback location candidates from local known landmarks."""
+    normalised_query = _normalise_location_text(query)
+    if not normalised_query:
+        return []
+
+    scored: list[tuple[int, LocationResult]] = []
+    for item in load_known_locations(path):
+        aliases = item.get("aliases", [])
+        names = [item.get("name", ""), item.get("admin1", ""), item.get("country", ""), *aliases]
+        normalised_names = [_normalise_location_text(name) for name in names if name]
+
+        score = 0
+        if any(normalised_query == name for name in normalised_names):
+            score = 100
+        elif any(normalised_query in name for name in normalised_names):
+            score = 80
+        elif any(name and name in normalised_query for name in normalised_names):
+            score = 70
+
+        if score > 0:
+            scored.append(
+                (
+                    score,
+                    LocationResult(
+                        name=item.get("name", "Unknown"),
+                        country=item.get("country", ""),
+                        admin1=item.get("admin1"),
+                        latitude=float(item["latitude"]),
+                        longitude=float(item["longitude"]),
+                        timezone=item.get("timezone"),
+                    ),
+                )
+            )
+
+    scored.sort(key=lambda row: row[0], reverse=True)
+    return [location for _, location in scored[:limit]]
+
+
+def merge_location_candidates(
+    geocoded: list[LocationResult],
+    fallback: list[LocationResult],
+    limit: int = 5,
+) -> list[LocationResult]:
+    """Merge geocoded and fallback locations while removing duplicates."""
+    merged: list[LocationResult] = []
+    seen: set[tuple[int, int]] = set()
+    for item in [*geocoded, *fallback]:
+        key = (round(item.latitude, 5), round(item.longitude, 5))
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+        if len(merged) >= limit:
+            break
+    return merged
 
 
 def geocode_location(query: str, count: int = 5) -> list[LocationResult]:

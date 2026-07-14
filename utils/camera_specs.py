@@ -26,8 +26,93 @@ def _compact_key(text: str) -> str:
     """Return a punctuation/spacing-insensitive key for model lookup."""
     return re.sub(r"[^a-z0-9]+", "", text.lower().replace("α", "alpha"))
 
+
+def _token_score(query: str, candidate: str) -> int:
+    query_tokens = {token for token in query.split() if len(token) > 1}
+    candidate_tokens = {token for token in candidate.split() if len(token) > 1}
+    if not query_tokens or not candidate_tokens:
+        return 0
+    overlap = len(query_tokens & candidate_tokens)
+    if not overlap:
+        return 0
+    coverage = overlap / max(1, len(query_tokens))
+    return int(40 + (coverage * 30))
+
+
 def load_camera_specs(path: Path = DATA_PATH) -> dict[str, dict[str, Any]]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def camera_match_candidates(
+    camera_model: str,
+    specs: dict[str, dict[str, Any]] | None = None,
+    limit: int = 5,
+) -> list[dict[str, Any]]:
+    """Return ranked camera candidates for forgiving user input."""
+    specs = specs or load_camera_specs()
+    query = _normalise(camera_model)
+    query_compact = _compact_key(camera_model)
+    if not query:
+        return []
+
+    candidates: list[dict[str, Any]] = []
+    for key, spec in specs.items():
+        names = [key, spec.get("display_name", ""), *spec.get("aliases", [])]
+        best_score = 0
+        best_basis = "weak token overlap"
+
+        for name in names:
+            if not name:
+                continue
+            normalised_name = _normalise(name)
+            compact_name = _compact_key(name)
+            score = 0
+            basis = "weak token overlap"
+
+            if query == normalised_name or query_compact == compact_name:
+                score = 100
+                basis = "exact alias match"
+            elif query and query in normalised_name:
+                score = 85
+                basis = "partial alias match"
+            elif normalised_name and normalised_name in query:
+                score = 80
+                basis = "camera alias found inside input"
+            elif query_compact and query_compact in compact_name:
+                score = 75
+                basis = "compact partial alias match"
+            elif compact_name and compact_name in query_compact:
+                score = 70
+                basis = "compact alias found inside input"
+            else:
+                score = _token_score(query, normalised_name)
+                if score:
+                    basis = "token overlap match"
+
+            if score > best_score:
+                best_score = score
+                best_basis = basis
+
+        if best_score > 0:
+            confidence = "low"
+            if best_score >= 95:
+                confidence = "high"
+            elif best_score >= 70:
+                confidence = "medium"
+
+            candidates.append(
+                {
+                    "canonical_key": key,
+                    "display_name": spec.get("display_name", key),
+                    "score": best_score,
+                    "confidence": confidence,
+                    "match_basis": best_basis,
+                    "spec": spec,
+                }
+            )
+
+    candidates.sort(key=lambda item: item["score"], reverse=True)
+    return candidates[:limit]
 
 
 def find_camera_spec(camera_model: str, specs: dict[str, dict[str, Any]] | None = None) -> dict[str, Any] | None:
@@ -36,26 +121,10 @@ def find_camera_spec(camera_model: str, specs: dict[str, dict[str, Any]] | None 
     The lookup is intentionally forgiving, so compact names such as
     "Sony A7R6" can match aliases like "Sony A7R VI".
     """
-    specs = specs or load_camera_specs()
-    query = _normalise(camera_model)
-    query_compact = _compact_key(camera_model)
-
-    for key, spec in specs.items():
-        names = [key, spec.get("display_name", ""), *spec.get("aliases", [])]
-        normalised_names = {_normalise(name) for name in names if name}
-        compact_names = {_compact_key(name) for name in names if name}
-        if query in normalised_names or query_compact in compact_names:
-            return spec
-
-    # Soft contains match, useful for entries like "Sony A7R6 with 24-70".
-    for key, spec in specs.items():
-        names = [key, spec.get("display_name", ""), *spec.get("aliases", [])]
-        if any(_normalise(name) in query for name in names if name):
-            return spec
-        if any(_compact_key(name) in query_compact for name in names if name):
-            return spec
-
-    return None
+    candidates = camera_match_candidates(camera_model, specs=specs, limit=1)
+    if not candidates:
+        return None
+    return candidates[0]["spec"]
 
 def resolution_summary(spec: dict[str, Any] | None, manual_width: int | None = None, manual_height: int | None = None) -> dict[str, Any]:
     """Return a normalized resolution object for UI display."""
