@@ -57,7 +57,7 @@ def find_camera_spec(camera_model: str, specs: dict[str, dict[str, Any]] | None 
 
     return None
 
-def resolution_summary(spec: dict[str, Any] | None, manual_width: int | None = None, manual_height: int | None = None) -> dict[str, Any]:
+def resolution_summary(spec: dict[str, Any] | None) -> dict[str, Any]:
     """Return a normalized resolution object for UI display."""
     if spec:
         width, height = spec["max_resolution_px"]
@@ -72,23 +72,12 @@ def resolution_summary(spec: dict[str, Any] | None, manual_width: int | None = N
             "known": True,
         }
 
-    if manual_width and manual_height:
-        return {
-            "display_name": "Manual camera entry",
-            "width": int(manual_width),
-            "height": int(manual_height),
-            "megapixels": round((manual_width * manual_height) / 1_000_000, 1),
-            "sensor": "Unknown",
-            "source": "Manual user input",
-            "known": False,
-        }
-
     return {
         "display_name": "Unknown camera",
         "width": None,
         "height": None,
         "megapixels": None,
         "sensor": "Unknown",
-        "source": "No camera match and no manual resolution supplied",
+        "source": "No detailed camera specification is available",
         "known": False,
     }

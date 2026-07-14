@@ -1,93 +1,272 @@
 from __future__ import annotations
 
-import json
-from pathlib import Path
+import logging
 
 import streamlit as st
 
+from utils.camera_catalog import (
+    CameraCatalogError,
+    camera_brands,
+    camera_details,
+    camera_models,
+    fetch_camera_catalog,
+    load_camera_catalog,
+)
 from utils.camera_specs import find_camera_spec, resolution_summary
 from utils.gear_recommender import build_recommendation, load_subject_rules, parse_lenses
-from utils.weather import fetch_weather, geocode_location, weather_risk_notes
+from utils.weather import (
+    LocationLookupError,
+    LocationResult,
+    WeatherLookupError,
+    fetch_weather,
+    geocode_location,
+    weather_risk_notes,
+)
 
 
-APP_DIR = Path(__file__).resolve().parent
-DEFAULT_KIT = json.loads((APP_DIR / "data" / "default_kit.json").read_text(encoding="utf-8"))
+LOGGER = logging.getLogger(__name__)
+CAMERA_NOT_LISTED = "My camera is not listed"
+SELECT_CAMERA_BRAND = "Select a camera brand"
+SELECT_CAMERA_MODEL = "Select a camera model"
+
+
+@st.cache_data(ttl=86_400, show_spinner="Refreshing the camera catalog...")
+def load_dynamic_camera_catalog() -> tuple[dict, str | None]:
+    try:
+        return fetch_camera_catalog(), None
+    except CameraCatalogError as exc:
+        LOGGER.warning("Using the bundled camera catalog: %s", exc)
+        return load_camera_catalog(), str(exc)
+
+
+def reset_camera_model() -> None:
+    st.session_state.camera_model = SELECT_CAMERA_MODEL
+
+
+def clear_location_search() -> None:
+    for key in ("location_results", "location_search_error", "selected_location_index"):
+        st.session_state.pop(key, None)
+
+
+@st.cache_data(ttl=604_800, show_spinner="Searching for matching locations...")
+def search_locations(query: str) -> list[LocationResult]:
+    return geocode_location(query, count=10)
 
 
 st.set_page_config(
-    page_title="Camera Gear Scout",
+    page_title="FrameWise",
     page_icon="📷",
     layout="wide",
 )
 
-st.title("📷 Camera Gear Scout")
-st.caption("Plan a smaller, smarter photo kit based on camera resolution, location weather, and subject.")
+st.title("📷 FrameWise")
+st.caption("Your intelligent photography advisor.")
+
+if "access_mode" not in st.session_state:
+    st.session_state.access_mode = None
+
+if st.session_state.access_mode is None:
+    _, login_column, _ = st.columns([1, 1.4, 1])
+
+    with login_column:
+        with st.container(border=True):
+            st.subheader("Welcome to FrameWise")
+            st.write("Build a practical camera, lens, weather, and technique plan for your next shoot.")
+            st.info(
+                "FrameWise is currently a public beta. Accounts and saved profiles are not enabled yet, "
+                "and the app does not store your personal information."
+            )
+
+            if st.button("Open FrameWise", type="primary", width="stretch"):
+                st.session_state.access_mode = "guest"
+                st.rerun()
+
+            st.caption("No account is required. Your entries remain only in the current app session.")
+
+    st.stop()
 
 with st.sidebar:
+    st.subheader("Public beta")
+    st.write("Using FrameWise in **guest mode**")
+    st.caption("Accounts and saved profiles are planned but not enabled.")
+    if st.button("Return to welcome", width="stretch"):
+        st.session_state.access_mode = None
+        st.rerun()
+
+    st.divider()
     st.header("How it works")
-    st.write(
-        "1. Enter a camera model or manual resolution.\\n"
-        "2. Enter a location so the app can geocode it and check weather.\\n"
-        "3. Choose the subject to get lens, composition, and technique guidance."
+
+    workflow_steps = [
+        ("Choose your camera", "Select the camera brand and model."),
+        ("Describe the shoot", "Set the subject, venue, mobility, carry style, and flash rules."),
+        ("Confirm the location", "Search for the place and choose the exact address for weather."),
+        ("Add your lens inventory", "List compatible lenses you own or plan to use."),
+        ("Build the shoot plan", "Review the recommended kit, setup, techniques, and risks."),
+    ]
+    for step_number, (title, description) in enumerate(workflow_steps, start=1):
+        st.markdown(f"**{step_number}. {title}**")
+        st.caption(description)
+
+    st.info(
+        "FrameWise never assumes that you own a lens. It uses your inventory when provided "
+        "and recommends suitable lens classes when it is empty."
     )
-    st.info("This is a rule-based starter app. Expand the JSON files as your camera and lens database grows.")
 
 subject_rules = load_subject_rules()
+catalog, catalog_refresh_error = load_dynamic_camera_catalog()
+brands = camera_brands(catalog)
 
-with st.form("planning_form"):
-    st.subheader("Shoot details")
+st.subheader("Shoot details")
 
-    col1, col2 = st.columns(2)
-    with col1:
-        camera_model = st.text_input(
-            "Camera model",
-            value=DEFAULT_KIT["camera"],
-            placeholder="e.g. Sony Alpha 1 II, Canon EOS R5 Mark II, Nikon Z8",
-        )
-        manual_width = st.number_input("Manual max image width px, if unknown", min_value=0, value=0, step=1)
-        manual_height = st.number_input("Manual max image height px, if unknown", min_value=0, value=0, step=1)
-        location_query = st.text_input("Location", placeholder="e.g. Sydney Opera House, NSW")
+selected_location = None
+col1, col2 = st.columns(2)
+with col1:
+    camera_brand = st.selectbox(
+        "Camera brand",
+        [SELECT_CAMERA_BRAND, *brands],
+        key="camera_brand",
+        on_change=reset_camera_model,
+    )
+    brand_selected = camera_brand != SELECT_CAMERA_BRAND
 
-    with col2:
-        subject = st.selectbox("Main subject", list(subject_rules.keys()))
-        indoor_outdoor = st.selectbox("Venue type", ["Outdoor", "Indoor", "Mixed"])
-        walking_level = st.selectbox("Walking distance / mobility", ["Light", "Moderate", "Heavy"])
-        carry_style = st.selectbox("Carry style", ["Minimalist", "Balanced", "Maximum quality"])
-        flash_allowed = st.checkbox("Flash allowed", value=False)
+    if brand_selected:
+        models = camera_models(catalog, camera_brand)
+        model_options = [SELECT_CAMERA_MODEL, *models, CAMERA_NOT_LISTED]
+    else:
+        model_options = [SELECT_CAMERA_MODEL]
 
-    st.markdown("#### Available lenses")
-    lens_text = st.text_area(
-        "Paste available lenses, one per line or comma-separated",
-        value="\\n".join(DEFAULT_KIT["lenses"]),
-        height=160,
+    selected_camera_model = st.selectbox(
+        "Camera model",
+        model_options,
+        key="camera_model",
+        disabled=not brand_selected,
     )
 
-    submitted = st.form_submit_button("Build shoot plan")
+    if brand_selected and selected_camera_model == CAMERA_NOT_LISTED:
+        camera_model = st.text_input(
+            "Enter camera model",
+            placeholder="e.g. Canon EOS R5 Mark II",
+            key=f"manual_camera_model_{camera_brand}",
+        )
+    elif brand_selected and selected_camera_model != SELECT_CAMERA_MODEL:
+        camera_model = selected_camera_model
+    else:
+        camera_model = ""
+
+    if not brand_selected:
+        st.caption("Select a camera brand, then choose its model.")
+    elif selected_camera_model == SELECT_CAMERA_MODEL:
+        st.caption("Select a camera model to continue.")
+    else:
+        selected_spec = find_camera_spec(camera_model)
+        if selected_spec:
+            st.caption(
+                f"Known resolution: {selected_spec['max_resolution_px'][0]} × "
+                f"{selected_spec['max_resolution_px'][1]} px"
+            )
+        else:
+            st.caption("Detailed resolution is not available for this model.")
+    location_query = st.text_input(
+        "Location",
+        placeholder="e.g. Sydney Opera House, Sydney, Australia",
+        key="location_query",
+        on_change=clear_location_search,
+    )
+    if st.button(
+        "Find location",
+        disabled=not location_query.strip(),
+        width="stretch",
+    ):
+        try:
+            st.session_state.location_results = search_locations(location_query.strip())
+            st.session_state.location_search_error = None
+            st.session_state.selected_location_index = 0
+        except LocationLookupError as exc:
+            LOGGER.warning("Location search failed: %s", exc)
+            st.session_state.location_results = []
+            st.session_state.location_search_error = str(exc)
+
+    if st.session_state.get("location_search_error"):
+        st.warning(st.session_state.location_search_error)
+
+    location_results = st.session_state.get("location_results", [])
+    if location_results:
+        selected_location_index = st.selectbox(
+            "Choose the exact location",
+            range(len(location_results)),
+            format_func=lambda index: location_results[index].label,
+            key="selected_location_index",
+        )
+        selected_location = location_results[selected_location_index]
+        st.caption(
+            f"Selected coordinates: {selected_location.latitude:.5f}, "
+            f"{selected_location.longitude:.5f}"
+        )
+        st.markdown(
+            "Location search © [OpenStreetMap contributors]"
+            "(https://www.openstreetmap.org/copyright)."
+        )
+    elif location_query.strip():
+        st.caption("Select **Find location**, then confirm the exact match before building the plan.")
+
+    st.markdown(
+        f"Camera list: [{catalog['source']['name']}]({catalog['source']['project_url']}) "
+        f"({catalog['source']['license']}), refreshed daily."
+    )
+    st.caption(
+        f"{catalog['model_count']:,} models across {catalog['brand_count']} brands. "
+        "Use the manual option if a new or specialist camera is missing."
+    )
+    if catalog_refresh_error:
+        st.warning("The live catalog could not be refreshed, so FrameWise is using its bundled fallback.")
+
+with col2:
+    subject = st.selectbox("Main subject", list(subject_rules.keys()))
+    indoor_outdoor = st.selectbox("Venue type", ["Outdoor", "Indoor", "Mixed"])
+    walking_level = st.selectbox("Walking distance / mobility", ["Light", "Moderate", "Heavy"])
+    carry_style = st.selectbox("Carry style", ["Minimalist", "Balanced", "Maximum quality"])
+    flash_allowed = st.checkbox("Flash allowed", value=False)
+
+st.markdown("#### Lens inventory")
+lens_text = st.text_area(
+    "Enter lenses you own or plan to use, one per line or comma-separated",
+    value="",
+    height=160,
+    placeholder="e.g. 24-70mm f/2.8\n70-200mm f/2.8",
+    key=f"lens_inventory_{camera_brand}",
+    disabled=not brand_selected,
+)
+if brand_selected:
+    st.caption(
+        f"Selected camera system: {camera_brand}. "
+        "Adapted and third-party lenses are supported."
+    )
+else:
+    st.caption("Select a camera system before adding lenses.")
+
+submitted = st.button("Build shoot plan", type="primary")
 
 if submitted:
+    if not brand_selected or not camera_model.strip():
+        st.error("Select a camera brand and model before building the shoot plan.")
+        st.stop()
+
     lenses = parse_lenses(lens_text)
 
     spec = find_camera_spec(camera_model)
-    resolution = resolution_summary(
-        spec,
-        manual_width=manual_width if manual_width > 0 else None,
-        manual_height=manual_height if manual_height > 0 else None,
-    )
+    selected_camera_details = camera_details(catalog, camera_brand, camera_model)
+    resolution = resolution_summary(spec)
 
     weather = None
-    selected_location = None
-    location_results = []
 
     if location_query.strip():
+        if selected_location is None:
+            st.error("Find and choose the exact location before building the shoot plan.")
+            st.stop()
         try:
-            location_results = geocode_location(location_query)
-            if location_results:
-                selected_location = location_results[0]
-                weather = fetch_weather(selected_location.latitude, selected_location.longitude)
-            else:
-                st.warning("No location match found. Try a more specific place name.")
-        except Exception as exc:
-            st.warning(f"Could not fetch location/weather data: {exc}")
+            weather = fetch_weather(selected_location.latitude, selected_location.longitude)
+        except WeatherLookupError as exc:
+            st.warning(str(exc))
 
     recommendation = build_recommendation(
         subject=subject,
@@ -96,6 +275,7 @@ if submitted:
         walking_level=walking_level,
         flash_allowed=flash_allowed,
         carry_style=carry_style,
+        crop_factor=selected_camera_details.get("crop_factor"),
     )
 
     st.divider()
@@ -109,7 +289,14 @@ if submitted:
         else:
             verdict += "."
     else:
-        verdict = "No lens inventory entered. Use the recommended focal ranges below."
+        recommended_primary = recommendation["recommended_lenses"][:2]
+        recommended_optional = recommendation["recommended_lenses"][2:3]
+        primary_label = " + ".join(recommended_primary)
+        verdict = f"Recommended starting kit: **{primary_label}**"
+        if recommended_optional:
+            verdict += f"; consider **{recommended_optional[0]}** only if needed."
+        else:
+            verdict += "."
 
     st.success(verdict)
 
@@ -132,6 +319,23 @@ if submitted:
                 "Why": "Pack only if the subject variety, distance, or lighting justifies a third lens.",
             }
         )
+    if not recommendation["primary_lenses"]:
+        for idx, lens in enumerate(recommendation["recommended_lenses"][:2], start=1):
+            kit_rows.append(
+                {
+                    "Role": f"Recommended lens {idx}",
+                    "Item": lens,
+                    "Why": recommendation["lens_reason"],
+                }
+            )
+        for lens in recommendation["recommended_lenses"][2:3]:
+            kit_rows.append(
+                {
+                    "Role": "Optional lens",
+                    "Item": lens,
+                    "Why": "Add only if the subject variety, distance, or lighting justifies another lens.",
+                }
+            )
     for item in recommendation["accessories"]:
         kit_rows.append({"Role": "Accessory", "Item": item, "Why": "Risk or workflow support."})
 
@@ -145,6 +349,8 @@ if submitted:
     if leave_lenses:
         st.write("Leave these lenses behind unless the brief changes:")
         st.write(", ".join(leave_lenses))
+    elif not lenses:
+        st.write("No owned lenses were entered. Use the recommendations above as a rental, purchase, or packing guide.")
     else:
         st.write("No extra lenses listed.")
 
@@ -193,7 +399,9 @@ if submitted:
         st.write(f"- {note}")
 
     st.header("6. Optional upgrade, rental, or accessory")
-    if subject == "Wildlife / Birds" and not any("600" in lens for lens in lenses):
+    if not lenses:
+        st.write("Rent or borrow the recommended lens class before buying, especially for specialist subjects.")
+    elif subject == "Wildlife / Birds" and not any("600" in lens for lens in lenses):
         st.write("Possible gap: long wildlife reach. Consider renting a 400-600mm class lens before buying.")
     elif subject == "Astrophotography" and not any(("14" in lens or "12-24" in lens or "12 to 24" in lens) for lens in lenses):
         st.write("Possible gap: fast ultra-wide lens for landscape astro. Rent before buying.")

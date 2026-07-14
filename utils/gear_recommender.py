@@ -26,6 +26,45 @@ def _contains_keyword(lens: str, keyword: str) -> bool:
     return keyword.lower() in lens.lower()
 
 
+def _format_recommended_lens(focal_range: str, crop_factor: float | None) -> str:
+    normalized = focal_range.strip()
+    lower = normalized.casefold()
+    if lower == "teleconverter":
+        return "Compatible teleconverter for additional reach"
+    if lower == "telescope":
+        return "Telescope and tracking-mount setup"
+
+    match = re.fullmatch(r"(\d+)(?:-(\d+))?mm(?:\s+(.*))?", normalized, flags=re.IGNORECASE)
+    if not match:
+        return normalized
+
+    low = int(match.group(1))
+    high = int(match.group(2)) if match.group(2) else None
+    descriptor = (match.group(3) or "").strip()
+    descriptor_label = f" {descriptor}" if descriptor else ""
+
+    if crop_factor and abs(crop_factor - 1.0) > 0.05:
+        actual_low = round(low / crop_factor)
+        actual_high = round(high / crop_factor) if high else None
+        actual_range = f"{actual_low}-{actual_high}mm" if actual_high else f"{actual_low}mm"
+        return (
+            f"Approx. {actual_range}{descriptor_label} lens "
+            f"({normalized} full-frame equivalent)"
+        )
+
+    return f"{normalized} lens"
+
+
+def recommended_lens_classes(
+    subject: str,
+    crop_factor: float | None = None,
+    rules: dict[str, dict[str, Any]] | None = None,
+) -> list[str]:
+    rules = rules or load_subject_rules()
+    preferred_ranges = rules.get(subject, {}).get("preferred_focal_ranges", [])
+    return [_format_recommended_lens(focal_range, crop_factor) for focal_range in preferred_ranges]
+
+
 def match_lenses_for_subject(lenses: list[str], subject: str, rules: dict[str, dict[str, Any]] | None = None) -> list[str]:
     """Choose up to two primary lenses and one optional lens based on user inventory."""
     rules = rules or load_subject_rules()
@@ -78,6 +117,7 @@ def build_recommendation(
     walking_level: str,
     flash_allowed: bool,
     carry_style: str,
+    crop_factor: float | None = None,
 ) -> dict[str, Any]:
     rules = load_subject_rules()
     rule = rules.get(subject, {})
@@ -91,6 +131,7 @@ def build_recommendation(
         "optional_lens": optional[0] if optional else None,
         "lens_reason": rule.get("default_lens_advice", "Use lenses that match subject distance, light, and movement."),
         "preferred_focal_ranges": rule.get("preferred_focal_ranges", []),
+        "recommended_lenses": recommended_lens_classes(subject, crop_factor, rules),
         "composition": rule.get("composition", []),
         "techniques": rule.get("techniques", []),
         "accessories": accessory_advice(subject, indoor_outdoor, flash_allowed, walking_level),

@@ -1,5 +1,7 @@
 {
   "sony alpha 1 mark ii": {
+    "brand": "Sony",
+    "crop_factor": 1.0,
     "display_name": "Sony Alpha 1 II / Alpha 1 Mark II",
     "aliases": [
       "sony a1 ii",
@@ -21,6 +23,8 @@
     "source": "Sony official specs"
   },
   "sony alpha 1": {
+    "brand": "Sony",
+    "crop_factor": 1.0,
     "display_name": "Sony Alpha 1",
     "aliases": [
       "sony a1",
@@ -38,6 +42,8 @@
     "source": "Sony official specs"
   },
   "sony alpha 7r v": {
+    "brand": "Sony",
+    "crop_factor": 1.0,
     "display_name": "Sony Alpha 7R V",
     "aliases": [
       "sony a7r v",
@@ -58,6 +64,8 @@
     "source": "Seed data; verify before production"
   },
   "canon eos r5 mark ii": {
+    "brand": "Canon",
+    "crop_factor": 1.0,
     "display_name": "Canon EOS R5 Mark II",
     "aliases": [
       "canon r5 mark ii",
@@ -77,6 +85,8 @@
     "source": "Seed data; verify before production"
   },
   "nikon z8": {
+    "brand": "Nikon",
+    "crop_factor": 1.0,
     "display_name": "Nikon Z8",
     "aliases": [
       "nikon z 8",
@@ -91,6 +101,8 @@
     "source": "Seed data; verify before production"
   },
   "fujifilm x-t5": {
+    "brand": "Fujifilm",
+    "crop_factor": 1.5,
     "display_name": "Fujifilm X-T5",
     "aliases": [
       "fuji x-t5",
@@ -108,6 +120,8 @@
     "source": "Seed data; verify before production"
   },
   "sony alpha 7r vi": {
+    "brand": "Sony",
+    "crop_factor": 1.0,
     "display_name": "Sony Alpha 7R VI",
     "aliases": [
       "sony a7r vi",

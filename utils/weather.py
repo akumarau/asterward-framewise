@@ -1,13 +1,37 @@
 """Open-Meteo geocoding and weather helpers."""
 from __future__ import annotations
 
-import requests
+import os
+import threading
+import time
 from dataclasses import dataclass
 from typing import Any
 
+import requests
 
-GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"
+
+GEOCODING_URL = os.getenv(
+    "FRAMEWISE_GEOCODING_URL",
+    "https://nominatim.openstreetmap.org/search",
+)
 FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
+GEOCODING_HEADERS = {
+    "User-Agent": os.getenv(
+        "FRAMEWISE_GEOCODING_USER_AGENT",
+        "FrameWise/0.1 (https://github.com/akumarau/Framewise)",
+    ),
+    "Referer": "https://github.com/akumarau/Framewise",
+}
+_GEOCODING_LOCK = threading.Lock()
+_LAST_GEOCODING_REQUEST = 0.0
+
+
+class LocationLookupError(RuntimeError):
+    """Raised when a location search cannot be completed."""
+
+
+class WeatherLookupError(RuntimeError):
+    """Raised when weather data cannot be fetched."""
 
 
 @dataclass
@@ -18,34 +42,76 @@ class LocationResult:
     latitude: float
     longitude: float
     timezone: str | None
+    display_name: str | None = None
 
     @property
     def label(self) -> str:
+        if self.display_name:
+            return self.display_name
         parts = [self.name, self.admin1, self.country]
         return ", ".join([p for p in parts if p])
 
 
-def geocode_location(query: str, count: int = 5) -> list[LocationResult]:
-    """Return up to `count` matching locations for a text query."""
-    if not query.strip():
-        return []
-    params = {"name": query, "count": count, "language": "en", "format": "json"}
-    response = requests.get(GEOCODING_URL, params=params, timeout=15)
-    response.raise_for_status()
-    payload = response.json()
-    results = payload.get("results", []) or []
+def parse_location_results(payload: list[dict[str, Any]]) -> list[LocationResult]:
+    """Convert Nominatim search results into FrameWise locations."""
     return [
         LocationResult(
-            name=item.get("name", "Unknown"),
-            country=item.get("country", ""),
-            admin1=item.get("admin1"),
-            latitude=float(item["latitude"]),
-            longitude=float(item["longitude"]),
-            timezone=item.get("timezone"),
+            name=item.get("name") or item.get("display_name", "Unknown").split(",")[0],
+            country=item.get("address", {}).get("country", ""),
+            admin1=(
+                item.get("address", {}).get("state")
+                or item.get("address", {}).get("region")
+                or item.get("address", {}).get("county")
+            ),
+            latitude=float(item["lat"]),
+            longitude=float(item["lon"]),
+            timezone=None,
+            display_name=item.get("display_name"),
         )
-        for item in results
-        if "latitude" in item and "longitude" in item
+        for item in payload
+        if "lat" in item and "lon" in item
     ]
+
+
+def geocode_location(query: str, count: int = 10) -> list[LocationResult]:
+    """Return explicit landmark/address matches for a text query."""
+    global _LAST_GEOCODING_REQUEST
+
+    query = query.strip()
+    if not query:
+        return []
+
+    params = {
+        "q": query,
+        "limit": min(max(count, 1), 40),
+        "format": "jsonv2",
+        "addressdetails": 1,
+        "accept-language": "en",
+    }
+
+    try:
+        with _GEOCODING_LOCK:
+            elapsed = time.monotonic() - _LAST_GEOCODING_REQUEST
+            if elapsed < 1:
+                time.sleep(1 - elapsed)
+            response = requests.get(
+                GEOCODING_URL,
+                params=params,
+                headers=GEOCODING_HEADERS,
+                timeout=15,
+            )
+            _LAST_GEOCODING_REQUEST = time.monotonic()
+        response.raise_for_status()
+        payload = response.json()
+    except (requests.RequestException, ValueError) as exc:
+        raise LocationLookupError("The location search service is currently unavailable.") from exc
+
+    if not isinstance(payload, list):
+        raise LocationLookupError("The location search service returned an unexpected response.")
+    try:
+        return parse_location_results(payload)
+    except (TypeError, ValueError) as exc:
+        raise LocationLookupError("The location search service returned invalid coordinates.") from exc
 
 
 def fetch_weather(latitude: float, longitude: float, forecast_days: int = 3) -> dict[str, Any]:
@@ -79,9 +145,12 @@ def fetch_weather(latitude: float, longitude: float, forecast_days: int = 3) -> 
             "wind_speed_10m_max",
         ]),
     }
-    response = requests.get(FORECAST_URL, params=params, timeout=15)
-    response.raise_for_status()
-    return response.json()
+    try:
+        response = requests.get(FORECAST_URL, params=params, timeout=15)
+        response.raise_for_status()
+        return response.json()
+    except (requests.RequestException, ValueError) as exc:
+        raise WeatherLookupError("Weather data is currently unavailable for this location.") from exc
 
 
 def weather_risk_notes(weather: dict[str, Any] | None) -> list[str]:

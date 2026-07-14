@@ -1,0 +1,7259 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-14T22:46:55.743426+00:00",
+  "source": {
+    "name": "Lensfun camera database",
+    "project_url": "https://github.com/lensfun/lensfun",
+    "archive_url": "https://github.com/lensfun/lensfun/archive/refs/heads/master.zip",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "attribution": "Lensfun contributors"
+  },
+  "brand_count": 28,
+  "model_count": 1020,
+  "brands": {
+    "AEE": [
+      "AEE DV"
+    ],
+    "Canon": [
+      "35mm film: full frame",
+      "Canon DIGITAL IXUS 30",
+      "Canon DIGITAL IXUS 40",
+      "Canon DIGITAL IXUS 50",
+      "Canon DIGITAL IXUS 55",
+      "Canon DIGITAL IXUS 70",
+      "Canon DIGITAL IXUS 80 IS",
+      "Canon DIGITAL IXUS 95 IS",
+      "Canon DIGITAL IXUS 400",
+      "Canon DIGITAL IXUS 430",
+      "Canon DIGITAL IXUS 500",
+      "Canon DIGITAL IXUS 700",
+      "Canon DIGITAL IXUS 750",
+      "Canon DIGITAL IXUS i",
+      "Canon DIGITAL IXUS II",
+      "Canon DIGITAL IXUS v2",
+      "Canon EOS 5D",
+      "Canon EOS 5D Mark II",
+      "Canon EOS 5D Mark III",
+      "Canon EOS 5D Mark IV",
+      "Canon EOS 5DS",
+      "Canon EOS 5DS R",
+      "Canon EOS 6D",
+      "Canon EOS 6D Mark II",
+      "Canon EOS 7D",
+      "Canon EOS 7D Mark II",
+      "Canon EOS 10D",
+      "Canon EOS 20D",
+      "Canon EOS 30D",
+      "Canon EOS 40D",
+      "Canon EOS 50D",
+      "Canon EOS 60D",
+      "Canon EOS 70D",
+      "Canon EOS 77D",
+      "Canon EOS 80D",
+      "Canon EOS 90D",
+      "Canon EOS 100D",
+      "Canon EOS 200D",
+      "Canon EOS 200D II",
+      "Canon EOS 250D",
+      "Canon EOS 300D DIGITAL",
+      "Canon EOS 350D DIGITAL",
+      "Canon EOS 400D DIGITAL",
+      "Canon EOS 450D",
+      "Canon EOS 500D",
+      "Canon EOS 550D",
+      "Canon EOS 600D",
+      "Canon EOS 650D",
+      "Canon EOS 700D",
+      "Canon EOS 750D",
+      "Canon EOS 760D",
+      "Canon EOS 800D",
+      "Canon EOS 850D",
+      "Canon EOS 1000D",
+      "Canon EOS 1100D",
+      "Canon EOS 1200D",
+      "Canon EOS 1300D",
+      "Canon EOS 2000D",
+      "Canon EOS 4000D",
+      "Canon EOS 8000D",
+      "Canon EOS 9000D",
+      "Canon EOS D30",
+      "Canon EOS D60",
+      "Canon EOS DIGITAL REBEL",
+      "Canon EOS DIGITAL REBEL XS",
+      "Canon EOS DIGITAL REBEL XSi",
+      "Canon EOS DIGITAL REBEL XT",
+      "Canon EOS DIGITAL REBEL XTi",
+      "Canon EOS Hi",
+      "Canon EOS Kiss Digital",
+      "Canon EOS Kiss Digital F",
+      "Canon EOS Kiss Digital N",
+      "Canon EOS Kiss Digital X",
+      "Canon EOS Kiss Digital X2",
+      "Canon EOS KISS M",
+      "Canon EOS Kiss X3",
+      "Canon EOS Kiss X4",
+      "Canon EOS Kiss X5",
+      "Canon EOS Kiss X6i",
+      "Canon EOS Kiss X7",
+      "Canon EOS Kiss X7i",
+      "Canon EOS Kiss X8i",
+      "Canon EOS Kiss X9",
+      "Canon EOS Kiss X9i",
+      "Canon EOS Kiss X10i",
+      "Canon EOS Kiss X50",
+      "Canon EOS Kiss X70",
+      "Canon EOS Kiss X90",
+      "Canon EOS M",
+      "Canon EOS M2",
+      "Canon EOS M3",
+      "Canon EOS M5",
+      "Canon EOS M6",
+      "Canon EOS M6 Mark II",
+      "Canon EOS M10",
+      "Canon EOS M50",
+      "Canon EOS M50m2",
+      "Canon EOS M100",
+      "Canon EOS M200",
+      "Canon EOS R",
+      "Canon EOS R1",
+      "Canon EOS R3",
+      "Canon EOS R5",
+      "Canon EOS R5 C",
+      "Canon EOS R5 Mark II",
+      "Canon EOS R5m2",
+      "Canon EOS R6",
+      "Canon EOS R6 Mark III",
+      "Canon EOS R6 V",
+      "Canon EOS R6m2",
+      "Canon EOS R7",
+      "Canon EOS R8",
+      "Canon EOS R10",
+      "Canon EOS R50",
+      "Canon EOS R50 V",
+      "Canon EOS R100",
+      "Canon EOS REBEL SL1",
+      "Canon EOS REBEL SL2",
+      "Canon EOS REBEL SL3",
+      "Canon EOS REBEL T1i",
+      "Canon EOS REBEL T2i",
+      "Canon EOS REBEL T3",
+      "Canon EOS REBEL T3i",
+      "Canon EOS REBEL T4i",
+      "Canon EOS REBEL T5",
+      "Canon EOS REBEL T5i",
+      "Canon EOS Rebel T6",
+      "Canon EOS Rebel T6i",
+      "Canon EOS Rebel T6s",
+      "Canon EOS Rebel T7",
+      "Canon EOS REBEL T7i",
+      "Canon EOS Rebel T8i",
+      "Canon EOS Rebel T100",
+      "Canon EOS RP",
+      "Canon EOS-1D",
+      "Canon EOS-1D Mark II",
+      "Canon EOS-1D Mark II N",
+      "Canon EOS-1D Mark III",
+      "Canon EOS-1D Mark IV",
+      "Canon EOS-1D X",
+      "Canon EOS-1D X Mark II",
+      "Canon EOS-1Ds",
+      "Canon EOS-1Ds Mark II",
+      "Canon EOS-1Ds Mark III",
+      "Canon IXUS 125 HS",
+      "Canon IXUS 220 HS",
+      "Canon IXY 220F",
+      "Canon IXY DIGITAL 30",
+      "Canon IXY DIGITAL 40",
+      "Canon IXY DIGITAL 50",
+      "Canon IXY DIGITAL 55",
+      "Canon IXY DIGITAL 200a",
+      "Canon IXY DIGITAL 400",
+      "Canon IXY DIGITAL 450",
+      "Canon IXY DIGITAL 500",
+      "Canon PowerShot A10",
+      "Canon PowerShot A20",
+      "Canon PowerShot A30",
+      "Canon PowerShot A40",
+      "Canon PowerShot A60",
+      "Canon PowerShot A70",
+      "Canon PowerShot A75",
+      "Canon PowerShot A80",
+      "Canon PowerShot A85",
+      "Canon PowerShot A95",
+      "Canon PowerShot A490",
+      "Canon PowerShot A495",
+      "Canon PowerShot A510",
+      "Canon PowerShot A520",
+      "Canon PowerShot A610",
+      "Canon PowerShot A620",
+      "Canon PowerShot A640",
+      "Canon PowerShot A650 IS",
+      "Canon PowerShot A720 IS",
+      "Canon PowerShot A1200",
+      "Canon PowerShot A4000 IS",
+      "Canon PowerShot ELPH 110 HS",
+      "Canon PowerShot G1",
+      "Canon PowerShot G1 X",
+      "Canon PowerShot G1 X Mark II",
+      "Canon PowerShot G1 X Mark III",
+      "Canon PowerShot G2",
+      "Canon PowerShot G3",
+      "Canon PowerShot G3 X",
+      "Canon PowerShot G5",
+      "Canon PowerShot G5 X",
+      "Canon PowerShot G5 X 4:3",
+      "Canon PowerShot G5 X 16:9",
+      "Canon PowerShot G5 X Mark II",
+      "Canon PowerShot G6",
+      "Canon PowerShot G7",
+      "Canon PowerShot G7 X",
+      "Canon PowerShot G7 X 4:3",
+      "Canon PowerShot G7 X 16:9",
+      "Canon PowerShot G7 X Mark II",
+      "Canon PowerShot G7 X Mark II 4:3",
+      "Canon PowerShot G7 X Mark II 16:9",
+      "Canon PowerShot G7 X Mark III",
+      "Canon PowerShot G9",
+      "Canon PowerShot G9 X",
+      "Canon PowerShot G9 X Mark II",
+      "Canon PowerShot G10",
+      "Canon PowerShot G11",
+      "Canon PowerShot G12",
+      "Canon PowerShot G15",
+      "Canon PowerShot G16",
+      "Canon PowerShot Pro1",
+      "Canon PowerShot Pro70",
+      "Canon PowerShot Pro90 IS",
+      "Canon PowerShot S1 IS",
+      "Canon PowerShot S2 IS",
+      "Canon PowerShot S5 IS",
+      "Canon PowerShot S30",
+      "Canon PowerShot S40",
+      "Canon PowerShot S45",
+      "Canon PowerShot S50",
+      "Canon PowerShot S60",
+      "Canon PowerShot S70",
+      "Canon PowerShot S80",
+      "Canon PowerShot S90",
+      "Canon PowerShot S95",
+      "Canon PowerShot S100",
+      "Canon PowerShot S110",
+      "Canon PowerShot S120",
+      "Canon PowerShot S200",
+      "Canon PowerShot S400",
+      "Canon PowerShot S410",
+      "Canon PowerShot S500",
+      "Canon PowerShot SD10",
+      "Canon PowerShot SD100",
+      "Canon PowerShot SD110",
+      "Canon PowerShot SD200",
+      "Canon PowerShot SD300",
+      "Canon PowerShot SD400",
+      "Canon PowerShot SD450",
+      "Canon PowerShot SD500",
+      "Canon PowerShot SD550",
+      "Canon PowerShot SD950 IS",
+      "Canon PowerShot SD1100 IS",
+      "Canon PowerShot SX1 IS",
+      "Canon PowerShot SX10 IS",
+      "Canon PowerShot SX30 IS",
+      "Canon PowerShot SX50 HS",
+      "Canon PowerShot SX60 HS",
+      "Canon PowerShot SX130 IS",
+      "Canon PowerShot SX150 IS",
+      "Canon PowerShot SX160 IS",
+      "Canon PowerShot SX220 HS",
+      "Canon PowerShot SX230 HS",
+      "Canon PowerShot SX240 HS",
+      "Canon PowerShot SX260 HS",
+      "Canon PowerShot SX510 HS",
+      "Canon PowerShot SX700 HS",
+      "Canon PowerShot SX710 HS",
+      "EOS D2000",
+      "IXY Digital 600",
+      "IXY Digital 700"
+    ],
+    "Casio": [
+      "EX-FH20",
+      "EX-P600",
+      "EX-P700",
+      "EX-Z3",
+      "EX-Z4",
+      "EX-Z30",
+      "EX-Z40",
+      "EX-Z55",
+      "EX-Z750",
+      "QV-3000EX",
+      "QV-3500EX",
+      "QV-4000"
+    ],
+    "Contax": [
+      "35mm film: full frame"
+    ],
+    "DJI": [
+      "FC3411",
+      "FC3582",
+      "FC6310",
+      "FC6310R",
+      "Mavic Air FC2103",
+      "Mavic Pro FC220",
+      "Phantom 3 Pro FC300X",
+      "Phantom Vision FC200"
+    ],
+    "Epson": [
+      "R-D1"
+    ],
+    "Fujifilm": [
+      "FinePix2800ZOOM",
+      "FinePix 3800",
+      "FinePix A370",
+      "FinePix E550",
+      "FinePix F10",
+      "FinePix F11",
+      "FinePix F200EXR",
+      "FinePix F601 ZOOM",
+      "FinePix F710",
+      "FinePix F770EXR",
+      "FinePix F810",
+      "FinePix HS20EXR",
+      "FinePix HS30EXR",
+      "FinePix S3Pro",
+      "FinePix S5Pro",
+      "FinePix S20Pro",
+      "FinePix S304",
+      "FinePix S602 ZOOM",
+      "FinePix S3000",
+      "FinePix S5100",
+      "FinePix S5500",
+      "FinePix S5600",
+      "FinePix S7000",
+      "FinePix S9000",
+      "FinePix S9500",
+      "FinePix S9600",
+      "FinePix X100",
+      "FinePixS1Pro",
+      "FinePixS2Pro",
+      "Fujifilm X-T5",
+      "GFX50S II",
+      "GFX100 II",
+      "GFX100RF",
+      "GFX100S",
+      "GFX100S II",
+      "GFX 50R",
+      "GFX 50S",
+      "GFX 100",
+      "IS Pro",
+      "X10",
+      "X20",
+      "X30",
+      "X70",
+      "X100F",
+      "X100S",
+      "X100T",
+      "X100V",
+      "X100VI",
+      "X-A1",
+      "X-A2",
+      "X-A3",
+      "X-A5",
+      "X-A7",
+      "X-A10",
+      "X-E1",
+      "X-E2",
+      "X-E2S",
+      "X-E3",
+      "X-E4",
+      "X-E5",
+      "X-H1",
+      "X-H2",
+      "X-H2S",
+      "X-M1",
+      "X-M5",
+      "X-Pro1",
+      "X-Pro2",
+      "X-Pro3",
+      "X-S1",
+      "X-S10",
+      "X-S20",
+      "X-T1",
+      "X-T2",
+      "X-T3",
+      "X-T4",
+      "X-T5",
+      "X-T10",
+      "X-T20",
+      "X-T30",
+      "X-T30 II",
+      "X-T30 III",
+      "X-T50",
+      "X-T100",
+      "X-T200",
+      "XF10",
+      "XQ1"
+    ],
+    "GitUp": [
+      "Git2"
+    ],
+    "GoPro": [
+      "HD2",
+      "Hero3+ black",
+      "HERO4 Black",
+      "HERO4 Silver",
+      "HERO5 Black",
+      "Hero10 black",
+      "Hero11 Black"
+    ],
+    "Hasselblad": [
+      "CFV 100C/907X",
+      "CFV II 50C/907X",
+      "Hasselblad 500 mech.",
+      "Hasselblad H3D",
+      "L1D-20c",
+      "L2D-20c",
+      "X1D II 50C",
+      "X2D 100C",
+      "X2D II 100C"
+    ],
+    "KMZ": [
+      "Zenit 122",
+      "Zenit 122K",
+      "Zenit 212K",
+      "Zenit 312K",
+      "Zenit 412LS",
+      "Zenit KM"
+    ],
+    "Kodak": [
+      "DCS520",
+      "DCS Pro 14N",
+      "DCS Pro 14nx",
+      "DCS Pro SLR/c",
+      "DCS Pro SLR/n",
+      "Kodak CX6330 Zoom Digital Camera",
+      "Kodak CX7525 Zoom Digital Camera",
+      "Kodak DC120 ZOOM Digital Camera",
+      "Kodak Digital Science DC50 Zoom Camera"
+    ],
+    "Konica Minolta": [
+      "DiMAGE A2",
+      "DiMAGE A200",
+      "DiMAGE G400",
+      "DiMAGE Z2",
+      "DiMAGE Z3",
+      "DiMAGE Z5",
+      "DiMAGE Z6",
+      "DiMAGE Z10",
+      "DiMAGE Z20",
+      "Dynax 5D",
+      "Dynax 7D",
+      "Maxxum 5D",
+      "Maxxum 7D",
+      "Revio KD-420Z"
+    ],
+    "Leica": [
+      "C-Lux",
+      "D-Lux2",
+      "D-Lux 3",
+      "D-Lux 4",
+      "Digilux 2",
+      "Digilux 3",
+      "Leica CL",
+      "Leica M10",
+      "Leica M10 Monochrom",
+      "Leica M10-D",
+      "Leica M10-P",
+      "Leica M10-R",
+      "Leica M11",
+      "Leica M11 Monochrom",
+      "Leica M11-D",
+      "Leica M11-P",
+      "Leica M (Typ 240)",
+      "Leica M EV1",
+      "Leica M Monochrom (Typ 246)",
+      "Leica Q2",
+      "Leica Q2 Mono",
+      "Leica Q3",
+      "LEICA Q3 43",
+      "Leica Q3 Mono",
+      "Leica Q (Typ 116)",
+      "Leica SL2",
+      "Leica SL2-S",
+      "Leica SL3",
+      "Leica SL3-S",
+      "Leica SL (Typ 601)",
+      "Leica T (Typ 701)",
+      "Leica TL",
+      "Leica TL2",
+      "Leica X Vario (Typ 107)",
+      "M8 Digital Camera",
+      "M9 Digital Camera"
+    ],
+    "Mamiya": [
+      "Mamiya 645",
+      "Mamiya ZD"
+    ],
+    "Minolta": [
+      "DiMAGE 7",
+      "DiMAGE 7Hi",
+      "DiMAGE 7i",
+      "DiMAGE A1",
+      "DiMAGE X",
+      "DiMAGE Xi",
+      "DiMAGE Xt",
+      "DiMAGE Z1"
+    ],
+    "Nikon": [
+      "35mm film: full frame",
+      "Coolpix A",
+      "Coolpix P60",
+      "Coolpix P330",
+      "Coolpix P340",
+      "Coolpix P1000",
+      "Coolpix P1100",
+      "Coolpix P6000",
+      "Coolpix P7000",
+      "Coolpix P7800",
+      "Coolpix S3300",
+      "E950",
+      "E990",
+      "E995",
+      "E4200",
+      "E4500",
+      "E4800",
+      "E5000",
+      "E5200",
+      "E5400",
+      "E5700",
+      "E5900",
+      "E7600",
+      "E7900",
+      "E8400",
+      "E8700",
+      "E8800",
+      "Nikon 1 AW1",
+      "Nikon 1 J1",
+      "Nikon 1 J2",
+      "Nikon 1 J3",
+      "Nikon 1 J4",
+      "Nikon 1 J5",
+      "Nikon 1 S1",
+      "Nikon 1 S2",
+      "Nikon 1 V1",
+      "Nikon 1 V2",
+      "Nikon 1 V3",
+      "Nikon D1",
+      "Nikon D1H",
+      "Nikon D1X",
+      "Nikon D2H",
+      "Nikon D2Hs",
+      "Nikon D2X",
+      "Nikon D2Xs",
+      "Nikon D3",
+      "Nikon D3S",
+      "Nikon D3X",
+      "Nikon D4",
+      "Nikon D4s",
+      "Nikon D5",
+      "Nikon D6",
+      "Nikon D40",
+      "Nikon D40X",
+      "Nikon D50",
+      "Nikon D60",
+      "Nikon D70",
+      "Nikon D70s",
+      "Nikon D80",
+      "Nikon D90",
+      "Nikon D100",
+      "Nikon D200",
+      "Nikon D300",
+      "Nikon D300S",
+      "Nikon D500",
+      "Nikon D600",
+      "Nikon D610",
+      "Nikon D700",
+      "Nikon D750",
+      "Nikon D780",
+      "Nikon D800",
+      "Nikon D800E",
+      "Nikon D810",
+      "Nikon D850",
+      "Nikon D3000",
+      "Nikon D3100",
+      "Nikon D3200",
+      "Nikon D3300",
+      "Nikon D3400",
+      "Nikon D3500",
+      "Nikon D5000",
+      "Nikon D5100",
+      "Nikon D5200",
+      "Nikon D5300",
+      "Nikon D5500",
+      "Nikon D5600",
+      "Nikon D7000",
+      "Nikon D7100",
+      "Nikon D7200",
+      "Nikon D7500",
+      "Nikon Df",
+      "Nikon Z5_2",
+      "Nikon Z6_3",
+      "Nikon Z8",
+      "Nikon Z50_2",
+      "Nikon Z 5",
+      "Nikon Z 6",
+      "Nikon Z 6_2",
+      "Nikon Z 7",
+      "Nikon Z 7_2",
+      "Nikon Z 9",
+      "Nikon Z 30",
+      "Nikon Z 50",
+      "Nikon Z f",
+      "Nikon Z fc",
+      "Nikon ZR"
+    ],
+    "Olympus": [
+      "C70Z,C7000Z",
+      "C700UZ",
+      "C730UZ",
+      "C750UZ",
+      "C860L,D360L",
+      "C2040Z",
+      "C3040Z",
+      "C4040Z",
+      "C4100Z,C4000Z",
+      "C5050Z",
+      "C5060WZ",
+      "C7070WZ",
+      "C8080WZ",
+      "E-1",
+      "E-3",
+      "E-5",
+      "E-10",
+      "E-20,E-20N,E-20P",
+      "E-30",
+      "E-300",
+      "E-330",
+      "E-400",
+      "E-410",
+      "E-420",
+      "E-450",
+      "E-500",
+      "E-510",
+      "E-520",
+      "E-600",
+      "E-620",
+      "E-M1",
+      "E-M1MarkII",
+      "E-M1MarkIII",
+      "E-M5",
+      "E-M5MarkII",
+      "E-M5MarkIII",
+      "E-M10",
+      "E-M10 Mark III",
+      "E-M10MarkII",
+      "E-M10MarkIIIS",
+      "E-M10MarkIV",
+      "E-P1",
+      "E-P2",
+      "E-P3",
+      "E-P5",
+      "E-P7",
+      "E-PL1",
+      "E-PL1s",
+      "E-PL2",
+      "E-PL3",
+      "E-PL5",
+      "E-PL6",
+      "E-PL7",
+      "E-PL8",
+      "E-PL9",
+      "E-PM1",
+      "E-PM2",
+      "mju-II",
+      "PEN-F",
+      "SP350",
+      "SP500UZ",
+      "SP560UZ",
+      "Stylus1",
+      "Stylus1,1s",
+      "Stylus Epic",
+      "TG-1",
+      "TG-2",
+      "TG-3",
+      "TG-4",
+      "TG-5",
+      "TG-6",
+      "u-miniD,Stylus V",
+      "X-2,C-50Z",
+      "XZ-1",
+      "XZ-2"
+    ],
+    "OM System": [
+      "OM-1",
+      "OM-1MarkII",
+      "OM-3",
+      "OM-5",
+      "OM-5MarkII"
+    ],
+    "Panasonic": [
+      "DC-FZ10002",
+      "DC-G9",
+      "DC-G9M2",
+      "DC-G90",
+      "DC-G91",
+      "DC-G95",
+      "DC-G95D",
+      "DC-G97",
+      "DC-G99",
+      "DC-G99D",
+      "DC-G100",
+      "DC-G100D",
+      "DC-G110",
+      "DC-GH5",
+      "DC-GH5M2",
+      "DC-GH5S",
+      "DC-GH6",
+      "DC-GH7",
+      "DC-GX7MK3",
+      "DC-GX9",
+      "DC-GX800",
+      "DC-GX880",
+      "DC-LX100M2",
+      "DC-S1",
+      "DC-S1H",
+      "DC-S1M2",
+      "DC-S1M2ES",
+      "DC-S1R",
+      "DC-S1RM2",
+      "DC-S5",
+      "DC-S5D",
+      "DC-S5M2",
+      "DC-S5M2X",
+      "DC-S9",
+      "DC-TZ90",
+      "DC-TZ91",
+      "DC-TZ96",
+      "DC-TZ99",
+      "DC-TZ200",
+      "DC-TZ200D",
+      "DC-TZ202",
+      "DC-TZ220",
+      "DC-ZS70",
+      "DC-ZS200",
+      "DC-ZS200D",
+      "DC-ZS220",
+      "DMC-FX2",
+      "DMC-FX7",
+      "DMC-FX8",
+      "DMC-FX9",
+      "DMC-FX150",
+      "DMC-FZ3",
+      "DMC-FZ5",
+      "DMC-FZ8",
+      "DMC-FZ10",
+      "DMC-FZ18",
+      "DMC-FZ20",
+      "DMC-FZ28",
+      "DMC-FZ30",
+      "DMC-FZ35",
+      "DMC-FZ40",
+      "DMC-FZ40 (3:2)",
+      "DMC-FZ45",
+      "DMC-FZ45 (3:2)",
+      "DMC-FZ50",
+      "DMC-FZ100",
+      "DMC-FZ100 (3:2)",
+      "DMC-FZ150",
+      "DMC-FZ200",
+      "DMC-FZ300",
+      "DMC-FZ330",
+      "DMC-FZ1000",
+      "DMC-FZ2000",
+      "DMC-FZ2500",
+      "DMC-G1",
+      "DMC-G2",
+      "DMC-G3",
+      "DMC-G5",
+      "DMC-G6",
+      "DMC-G7",
+      "DMC-G8",
+      "DMC-G10",
+      "DMC-G70",
+      "DMC-G80",
+      "DMC-G81",
+      "DMC-G85",
+      "DMC-GF1",
+      "DMC-GF2",
+      "DMC-GF3",
+      "DMC-GF5",
+      "DMC-GF6",
+      "DMC-GF7",
+      "DMC-GF8",
+      "DMC-GH1",
+      "DMC-GH2",
+      "DMC-GH3",
+      "DMC-GH4",
+      "DMC-GM1",
+      "DMC-GM5",
+      "DMC-GX1",
+      "DMC-GX7",
+      "DMC-GX8",
+      "DMC-GX80",
+      "DMC-GX85",
+      "DMC-L1",
+      "DMC-L10",
+      "DMC-LC1",
+      "DMC-LF1",
+      "DMC-LX1",
+      "DMC-LX2",
+      "DMC-LX3",
+      "DMC-LX5",
+      "DMC-LX7",
+      "DMC-LX10",
+      "DMC-LX15",
+      "DMC-LX100",
+      "DMC-LZ1",
+      "DMC-LZ2",
+      "DMC-TZ60",
+      "DMC-TZ61",
+      "DMC-TZ70",
+      "DMC-TZ71",
+      "DMC-TZ80",
+      "DMC-TZ81",
+      "DMC-TZ100",
+      "DMC-TZ101",
+      "DMC-TZ110",
+      "DMC-ZS40",
+      "DMC-ZS50",
+      "DMC-ZS60",
+      "DMC-ZS100",
+      "DMC-ZS110"
+    ],
+    "Pentax": [
+      "35mm film: full frame",
+      "Pentax 645D",
+      "Pentax *ist D",
+      "Pentax *ist DL",
+      "Pentax *ist DL2",
+      "Pentax *ist DS",
+      "Pentax *ist DS2",
+      "Pentax K10D",
+      "Pentax K20D",
+      "Pentax K100D",
+      "Pentax K100D Super",
+      "Pentax K110D",
+      "Pentax K200D",
+      "Pentax K2000",
+      "Pentax K-01",
+      "Pentax K-5",
+      "Pentax K-5 II",
+      "Pentax K-5 II s",
+      "Pentax K-7",
+      "Pentax K-30",
+      "Pentax K-50",
+      "Pentax K-500",
+      "Pentax K-m",
+      "Pentax K-r",
+      "Pentax K-x",
+      "Pentax Optio 33L",
+      "Pentax Optio 33LF",
+      "Pentax Optio 43WR",
+      "Pentax Optio 230GS",
+      "Pentax Optio 330GS",
+      "Pentax Optio 430",
+      "Pentax Optio 450",
+      "Pentax Optio 550",
+      "Pentax Optio 555",
+      "Pentax Optio 750Z",
+      "Pentax Q",
+      "Pentax Q7",
+      "Pentax Q10",
+      "Pentax Q-S1"
+    ],
+    "Phase One": [
+      "IQ140",
+      "IQ180",
+      "P 25"
+    ],
+    "Ricoh": [
+      "Caplio GX",
+      "Caplio GX8",
+      "Caplio RR30",
+      "GR",
+      "GR Digital",
+      "Pentax 645Z",
+      "Pentax K-1",
+      "Pentax K-1 Mark II",
+      "Pentax K-3",
+      "Pentax K-3 II",
+      "Pentax K-3 Mark III",
+      "Pentax K-3 Mark III Monochrome",
+      "Pentax K-70",
+      "Pentax K-S1",
+      "Pentax K-S2",
+      "Pentax KF",
+      "Pentax KP",
+      "Ricoh GR III",
+      "Ricoh GR III HDF",
+      "Ricoh GR IIIx",
+      "Ricoh GR IIIx HDF",
+      "Ricoh GR IV"
+    ],
+    "Rolleiflex": [
+      "2.8E"
+    ],
+    "Samsung": [
+      "EK-GN120",
+      "EX2F",
+      "GX20",
+      "GX-1L",
+      "GX-1S",
+      "NX1",
+      "NX5",
+      "NX10",
+      "NX11",
+      "NX20",
+      "NX30",
+      "NX100",
+      "NX200",
+      "NX210",
+      "NX300",
+      "NX300M",
+      "NX500",
+      "NX1000",
+      "NX1100",
+      "NX2000",
+      "NX3000",
+      "NX mini",
+      "SAMSUNG GX10",
+      "SM-G935F",
+      "SM-G950F",
+      "SM-G991B",
+      "SM-G9500",
+      "SM-N950U",
+      "WB2000"
+    ],
+    "Sigma": [
+      "sd Quattro",
+      "sd Quattro H",
+      "Sigma BF",
+      "Sigma DP1",
+      "Sigma DP1 Merrill",
+      "Sigma DP1S",
+      "Sigma DP1X",
+      "Sigma DP2",
+      "Sigma DP2 Merrill",
+      "Sigma DP2S",
+      "Sigma DP2X",
+      "Sigma DP3 Merrill",
+      "Sigma fp",
+      "Sigma fp L",
+      "Sigma SD1",
+      "Sigma SD1 Merrill",
+      "Sigma SD9",
+      "Sigma SD10",
+      "Sigma SD14",
+      "Sigma SD15"
+    ],
+    "Sony": [
+      "Cybershot",
+      "DSC-F828",
+      "DSC-H1",
+      "DSC-HX20V",
+      "DSC-HX300",
+      "DSC-P73",
+      "DSC-P93",
+      "DSC-P100",
+      "DSC-P150",
+      "DSC-P200",
+      "DSC-R1",
+      "DSC-RX0",
+      "DSC-RX0M2",
+      "DSC-RX1R",
+      "DSC-RX1RM2",
+      "DSC-RX1RM3",
+      "DSC-RX10",
+      "DSC-RX10M2",
+      "DSC-RX10M3",
+      "DSC-RX10M4",
+      "DSC-RX100",
+      "DSC-RX100M2",
+      "DSC-RX100M3",
+      "DSC-RX100M4",
+      "DSC-RX100M5",
+      "DSC-RX100M5A",
+      "DSC-RX100M6",
+      "DSC-RX100M7",
+      "DSC-RX100M7A",
+      "DSC-S60",
+      "DSC-S80",
+      "DSC-S90",
+      "DSC-ST80",
+      "DSC-T1",
+      "DSC-V1",
+      "DSC-V3",
+      "DSC-W1",
+      "DSC-W5",
+      "DSC-W7",
+      "DSC-W12",
+      "DSC-W15",
+      "DSLR-A100",
+      "DSLR-A200",
+      "DSLR-A230",
+      "DSLR-A290",
+      "DSLR-A300",
+      "DSLR-A330",
+      "DSLR-A350",
+      "DSLR-A380",
+      "DSLR-A390",
+      "DSLR-A450",
+      "DSLR-A500",
+      "DSLR-A550",
+      "DSLR-A560",
+      "DSLR-A580",
+      "DSLR-A700",
+      "DSLR-A850",
+      "DSLR-A900",
+      "ILCA-68",
+      "ILCA-77M2",
+      "ILCA-99M2",
+      "ILCE-1",
+      "ILCE-1M2",
+      "ILCE-7",
+      "ILCE-7C",
+      "ILCE-7CM2",
+      "ILCE-7CR",
+      "ILCE-7M2",
+      "ILCE-7M3",
+      "ILCE-7M4",
+      "ILCE-7M5",
+      "ILCE-7R",
+      "ILCE-7RM2",
+      "ILCE-7RM3",
+      "ILCE-7RM3A",
+      "ILCE-7RM4",
+      "ILCE-7RM4A",
+      "ILCE-7RM5",
+      "ILCE-7RM6",
+      "ILCE-7S",
+      "ILCE-7SM2",
+      "ILCE-7SM3",
+      "ILCE-9",
+      "ILCE-9M2",
+      "ILCE-9M3",
+      "ILCE-3000",
+      "ILCE-5000",
+      "ILCE-5100",
+      "ILCE-6000",
+      "ILCE-6100",
+      "ILCE-6100A",
+      "ILCE-6300",
+      "ILCE-6400",
+      "ILCE-6400A",
+      "ILCE-6500",
+      "ILCE-6600",
+      "ILCE-6700",
+      "ILME-FX2",
+      "ILME-FX3",
+      "ILME-FX30",
+      "NEX-3",
+      "NEX-3N",
+      "NEX-5",
+      "NEX-5N",
+      "NEX-5R",
+      "NEX-5T",
+      "NEX-6",
+      "NEX-7",
+      "NEX-C3",
+      "NEX-F3",
+      "SLT-A33",
+      "SLT-A35",
+      "SLT-A37",
+      "SLT-A55V",
+      "SLT-A57",
+      "SLT-A58",
+      "SLT-A65V",
+      "SLT-A77V",
+      "SLT-A99",
+      "SLT-A99V",
+      "Sony Alpha 1",
+      "Sony Alpha 1 II / Alpha 1 Mark II",
+      "Sony Alpha 7R V",
+      "Sony Alpha 7R VI",
+      "Xperia Z3",
+      "ZV-1",
+      "ZV-E1",
+      "ZV-E10",
+      "ZV-E10M2"
+    ],
+    "YI Technology": [
+      "M1"
+    ]
+  },
+  "camera_details": {
+    "Mamiya": {
+      "Mamiya 645": {
+        "crop_factor": 0.577,
+        "mounts": [
+          "Mamiya 645"
+        ]
+      },
+      "Mamiya ZD": {
+        "crop_factor": 0.721,
+        "mounts": [
+          "Mamiya 645"
+        ]
+      }
+    },
+    "Phase One": {
+      "IQ180": {
+        "crop_factor": 0.644,
+        "mounts": [
+          "Mamiya 645"
+        ]
+      },
+      "IQ140": {
+        "crop_factor": 0.789,
+        "mounts": [
+          "Mamiya 645"
+        ]
+      },
+      "P 25": {
+        "crop_factor": 0.577,
+        "mounts": [
+          "Mamiya 645"
+        ]
+      }
+    },
+    "Rolleiflex": {
+      "2.8E": {
+        "crop_factor": 0.51,
+        "mounts": [
+          "Rollei 6x6"
+        ]
+      }
+    },
+    "GoPro": {
+      "HD2": {
+        "crop_factor": 6.4,
+        "mounts": [
+          "goProHero"
+        ]
+      },
+      "Hero3+ black": {
+        "crop_factor": 5.42,
+        "mounts": [
+          "goProHero3+"
+        ]
+      },
+      "HERO4 Silver": {
+        "crop_factor": 7.66,
+        "mounts": [
+          "goProHero4"
+        ]
+      },
+      "HERO4 Black": {
+        "crop_factor": 5.0,
+        "mounts": [
+          "goProHero4black"
+        ]
+      },
+      "HERO5 Black": {
+        "crop_factor": 5.0,
+        "mounts": [
+          "goProHero4black"
+        ]
+      },
+      "Hero10 black": {
+        "crop_factor": 5.5,
+        "mounts": [
+          "goProHero10bl"
+        ]
+      },
+      "Hero11 Black": {
+        "crop_factor": 5.54,
+        "mounts": [
+          "goProHero11bl"
+        ]
+      }
+    },
+    "DJI": {
+      "Phantom Vision FC200": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "dijPhantomVisionFC200"
+        ]
+      },
+      "Phantom 3 Pro FC300X": {
+        "crop_factor": 5.5,
+        "mounts": [
+          "dijPhantom3ProFC300X"
+        ]
+      },
+      "Mavic Pro FC220": {
+        "crop_factor": 5.64,
+        "mounts": [
+          "djiMavicProFC220"
+        ]
+      },
+      "FC6310": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "djiFC6310"
+        ]
+      },
+      "FC3411": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "djiFC3411"
+        ]
+      },
+      "Mavic Air FC2103": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "djiMavicAirFC2103"
+        ]
+      },
+      "FC3582": {
+        "crop_factor": 3.6,
+        "mounts": [
+          "djiFC3582"
+        ]
+      },
+      "FC6310R": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "djiFC6310R"
+        ]
+      }
+    },
+    "AEE": {
+      "AEE DV": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "aeeDV"
+        ]
+      }
+    },
+    "GitUp": {
+      "Git2": {
+        "crop_factor": 5.57,
+        "mounts": [
+          "git2"
+        ]
+      }
+    },
+    "Hasselblad": {
+      "L1D-20c": {
+        "crop_factor": 2.8,
+        "mounts": [
+          "l1d20c"
+        ]
+      },
+      "L2D-20c": {
+        "crop_factor": 1.953,
+        "mounts": [
+          "l2d20c"
+        ]
+      },
+      "X1D II 50C": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Hasselblad X"
+        ]
+      },
+      "X2D 100C": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Hasselblad X"
+        ]
+      },
+      "X2D II 100C": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Hasselblad X"
+        ]
+      },
+      "CFV II 50C/907X": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Hasselblad X"
+        ]
+      },
+      "CFV 100C/907X": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Hasselblad X"
+        ]
+      },
+      "Hasselblad 500 mech.": {
+        "crop_factor": 0.66,
+        "mounts": [
+          "Hasselblad 500"
+        ]
+      },
+      "Hasselblad H3D": {
+        "crop_factor": 0.72,
+        "mounts": [
+          "Hasselblad H"
+        ]
+      }
+    },
+    "Canon": {
+      "Canon PowerShot Pro1": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "canonPro1"
+        ]
+      },
+      "Canon PowerShot Pro70": {
+        "crop_factor": 5.47,
+        "mounts": [
+          "canonPro70"
+        ]
+      },
+      "Canon PowerShot G6": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG3"
+        ]
+      },
+      "Canon PowerShot G5": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG3"
+        ]
+      },
+      "Canon PowerShot G3": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG3"
+        ]
+      },
+      "Canon PowerShot G2": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG2"
+        ]
+      },
+      "Canon PowerShot G1": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG1"
+        ]
+      },
+      "Canon PowerShot G7": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG7"
+        ]
+      },
+      "Canon PowerShot G3 X": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "canonG3X"
+        ]
+      },
+      "Canon PowerShot G5 X": {
+        "crop_factor": 2.72,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G5 X 4:3": {
+        "crop_factor": 2.94,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G5 X 16:9": {
+        "crop_factor": 2.85,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X": {
+        "crop_factor": 2.72,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X 4:3": {
+        "crop_factor": 2.94,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X 16:9": {
+        "crop_factor": 2.85,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X Mark II": {
+        "crop_factor": 2.72,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X Mark II 4:3": {
+        "crop_factor": 2.94,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X Mark II 16:9": {
+        "crop_factor": 2.85,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G7 X Mark III": {
+        "crop_factor": 2.72,
+        "mounts": [
+          "canonG7X"
+        ]
+      },
+      "Canon PowerShot G9": {
+        "crop_factor": 4.605,
+        "mounts": [
+          "canonG9"
+        ]
+      },
+      "Canon PowerShot G9 X": {
+        "crop_factor": 2.72,
+        "mounts": [
+          "canonG9X"
+        ]
+      },
+      "Canon PowerShot G9 X Mark II": {
+        "crop_factor": 2.72,
+        "mounts": [
+          "canonG9X"
+        ]
+      },
+      "Canon PowerShot G10": {
+        "crop_factor": 4.605,
+        "mounts": [
+          "canonG10"
+        ]
+      },
+      "Canon PowerShot G11": {
+        "crop_factor": 4.554,
+        "mounts": [
+          "canonG11"
+        ]
+      },
+      "Canon PowerShot G12": {
+        "crop_factor": 4.63,
+        "mounts": [
+          "canonG12"
+        ]
+      },
+      "Canon PowerShot G1 X": {
+        "crop_factor": 1.85,
+        "mounts": [
+          "canonG1X"
+        ]
+      },
+      "Canon PowerShot G1 X Mark II": {
+        "crop_factor": 1.93,
+        "mounts": [
+          "canonG1X2"
+        ]
+      },
+      "Canon PowerShot G1 X Mark III": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "canonG1X3"
+        ]
+      },
+      "Canon PowerShot G5 X Mark II": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "canonG5X2"
+        ]
+      },
+      "Canon PowerShot G15": {
+        "crop_factor": 4.65,
+        "mounts": [
+          "canonG15"
+        ]
+      },
+      "Canon PowerShot G16": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "canonG16"
+        ]
+      },
+      "Canon PowerShot SD550": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonSD500"
+        ]
+      },
+      "Canon PowerShot SD950 IS": {
+        "crop_factor": 4.7,
+        "mounts": [
+          "canonSD950"
+        ]
+      },
+      "Canon DIGITAL IXUS 750": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonSD500"
+        ]
+      },
+      "IXY Digital 700": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonSD500"
+        ]
+      },
+      "Canon PowerShot SD500": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonSD500"
+        ]
+      },
+      "Canon DIGITAL IXUS 700": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonSD500"
+        ]
+      },
+      "IXY Digital 600": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonSD500"
+        ]
+      },
+      "Canon PowerShot SD450": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon DIGITAL IXUS 55": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon PowerShot SD400": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon IXY DIGITAL 55": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon DIGITAL IXUS 50": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon DIGITAL IXUS 70": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon PowerShot SD300": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon IXY DIGITAL 50": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon DIGITAL IXUS 40": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon PowerShot SD200": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon IXY DIGITAL 40": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon DIGITAL IXUS 30": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonSD200"
+        ]
+      },
+      "Canon PowerShot S200": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon DIGITAL IXUS v2": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon IXY DIGITAL 200a": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon PowerShot SD110": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon DIGITAL IXUS II": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon IXY DIGITAL 30": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon PowerShot SD100": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonIxusII"
+        ]
+      },
+      "Canon DIGITAL IXUS i": {
+        "crop_factor": 6.144,
+        "mounts": [
+          "canonIxusI"
+        ]
+      },
+      "Canon PowerShot SD10": {
+        "crop_factor": 6.144,
+        "mounts": [
+          "canonIxusI"
+        ]
+      },
+      "Canon PowerShot S500": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon DIGITAL IXUS 500": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon IXY DIGITAL 500": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon PowerShot S410": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon DIGITAL IXUS 430": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon IXY DIGITAL 450": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon PowerShot S400": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon DIGITAL IXUS 400": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon IXY DIGITAL 400": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonIxus400"
+        ]
+      },
+      "Canon PowerShot S80": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS70"
+        ]
+      },
+      "Canon PowerShot S70": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS70"
+        ]
+      },
+      "Canon PowerShot S60": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS70"
+        ]
+      },
+      "Canon PowerShot S50": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS30"
+        ]
+      },
+      "Canon PowerShot S45": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS30"
+        ]
+      },
+      "Canon PowerShot S40": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS30"
+        ]
+      },
+      "Canon PowerShot S30": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonS30"
+        ]
+      },
+      "Canon PowerShot A1200": {
+        "crop_factor": 5.61,
+        "mounts": [
+          "canonA1200"
+        ]
+      },
+      "Canon PowerShot A610": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonA610"
+        ]
+      },
+      "Canon PowerShot A620": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "canonA610"
+        ]
+      },
+      "Canon PowerShot A520": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonA510"
+        ]
+      },
+      "Canon PowerShot A510": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "canonA510"
+        ]
+      },
+      "Canon PowerShot A95": {
+        "crop_factor": 4.85,
+        "mounts": [
+          "canonA80"
+        ]
+      },
+      "Canon PowerShot A80": {
+        "crop_factor": 4.85,
+        "mounts": [
+          "canonA80"
+        ]
+      },
+      "Canon PowerShot A85": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A75": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A70": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A60": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A40": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A30": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A20": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot A10": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "canonA70"
+        ]
+      },
+      "Canon PowerShot S2 IS": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "canonS2"
+        ]
+      },
+      "Canon PowerShot S1 IS": {
+        "crop_factor": 6.56,
+        "mounts": [
+          "canonS1"
+        ]
+      },
+      "Canon PowerShot S5 IS": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "canonS5"
+        ]
+      },
+      "Canon PowerShot Pro90 IS": {
+        "crop_factor": 5.28,
+        "mounts": [
+          "canonPro90"
+        ]
+      },
+      "Canon DIGITAL IXUS 80 IS": {
+        "crop_factor": 6.02,
+        "mounts": [
+          "canonIxus80IS"
+        ]
+      },
+      "Canon DIGITAL IXUS 95 IS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonIxus80IS"
+        ]
+      },
+      "Canon PowerShot SX1 IS": {
+        "crop_factor": 5.5,
+        "mounts": [
+          "canonSX1"
+        ]
+      },
+      "Canon PowerShot S90": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "canonS90"
+        ]
+      },
+      "Canon PowerShot A650 IS": {
+        "crop_factor": 4.67712,
+        "mounts": [
+          "canonA650IS"
+        ]
+      },
+      "Canon PowerShot SX150 IS": {
+        "crop_factor": 5.62,
+        "mounts": [
+          "canonSX150IS"
+        ]
+      },
+      "Canon PowerShot SX10 IS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonSX10IS"
+        ]
+      },
+      "Canon PowerShot SX130 IS": {
+        "crop_factor": 5.62,
+        "mounts": [
+          "canonSX150IS"
+        ]
+      },
+      "Canon PowerShot SX220 HS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonSX220HS"
+        ]
+      },
+      "Canon PowerShot SX230 HS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonSX230HS"
+        ]
+      },
+      "Canon PowerShot A720 IS": {
+        "crop_factor": 6.03,
+        "mounts": [
+          "canonA720IS"
+        ]
+      },
+      "Canon PowerShot S120": {
+        "crop_factor": 4.62,
+        "mounts": [
+          "canonS120"
+        ]
+      },
+      "Canon PowerShot A640": {
+        "crop_factor": 4.79,
+        "mounts": [
+          "canonA640"
+        ]
+      },
+      "Canon PowerShot SX240 HS": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "canonSX260HS"
+        ]
+      },
+      "Canon PowerShot SX260 HS": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "canonSX260HS"
+        ]
+      },
+      "Canon IXUS 220 HS": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "canonIxus220HS"
+        ]
+      },
+      "Canon PowerShot S95": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "canonS95"
+        ]
+      },
+      "Canon PowerShot S100": {
+        "crop_factor": 4.62,
+        "mounts": [
+          "canonS100"
+        ]
+      },
+      "Canon PowerShot A4000 IS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonA4000IS"
+        ]
+      },
+      "Canon PowerShot ELPH 110 HS": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "canonIxus125HS"
+        ]
+      },
+      "Canon IXUS 125 HS": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "canonIxus125HS"
+        ]
+      },
+      "Canon PowerShot SX510 HS": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "canonSX510HS"
+        ]
+      },
+      "Canon PowerShot S110": {
+        "crop_factor": 4.62,
+        "mounts": [
+          "canonS110"
+        ]
+      },
+      "Canon PowerShot SD1100 IS": {
+        "crop_factor": 6.02,
+        "mounts": [
+          "canonIxus80IS"
+        ]
+      },
+      "Canon PowerShot SX160 IS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonSX160IS"
+        ]
+      },
+      "Canon PowerShot A495": {
+        "crop_factor": 5.39,
+        "mounts": [
+          "canonA495"
+        ]
+      },
+      "Canon PowerShot A490": {
+        "crop_factor": 5.39,
+        "mounts": [
+          "canonA495"
+        ]
+      },
+      "Canon PowerShot SX30 IS": {
+        "crop_factor": 5.581,
+        "mounts": [
+          "canonSX30IS"
+        ]
+      },
+      "Canon PowerShot SX50 HS": {
+        "crop_factor": 5.61,
+        "mounts": [
+          "canonSX50HS"
+        ]
+      },
+      "Canon PowerShot SX60 HS": {
+        "crop_factor": 5.61,
+        "mounts": [
+          "canonSX60HS"
+        ]
+      },
+      "Canon PowerShot SX700 HS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonSX710HS"
+        ]
+      },
+      "Canon PowerShot SX710 HS": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "canonSX710HS"
+        ]
+      },
+      "Canon IXY 220F": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "canonIxy220F"
+        ]
+      },
+      "Canon EOS M": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M2": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M3": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M5": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M6": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M6 Mark II": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M10": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M50": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M50m2": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS KISS M": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M100": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS M200": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-M"
+        ]
+      },
+      "Canon EOS R7": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R10": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R50": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R50 V": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R100": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS RP": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R1": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R5": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R5 C": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R5m2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R6": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R6m2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R6 Mark III": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R6 V": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS R8": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon RF"
+        ]
+      },
+      "Canon EOS 5DS": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 5DS R": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 6D": {
+        "crop_factor": 1.005,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 6D Mark II": {
+        "crop_factor": 1.005,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 5D Mark IV": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 5D Mark III": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 5D Mark II": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 5D": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1Ds": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1Ds Mark II": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D Mark II": {
+        "crop_factor": 1.255,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D Mark II N": {
+        "crop_factor": 1.255,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1Ds Mark III": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D Mark III": {
+        "crop_factor": 1.282,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D Mark IV": {
+        "crop_factor": 1.29,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D": {
+        "crop_factor": 1.255,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D X": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS-1D X Mark II": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS 1000D": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS DIGITAL REBEL XS": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss Digital F": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 1100D": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T3": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X50": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 300D DIGITAL": {
+        "crop_factor": 1.587,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS DIGITAL REBEL": {
+        "crop_factor": 1.587,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss Digital": {
+        "crop_factor": 1.587,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 350D DIGITAL": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS DIGITAL REBEL XT": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss Digital N": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 400D DIGITAL": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS DIGITAL REBEL XTi": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss Digital X": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 450D": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS DIGITAL REBEL XSi": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss Digital X2": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 500D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T1i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X3": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 550D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T2i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X4": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 600D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T3i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X5": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 650D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T4i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X6i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 700D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T5i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 800D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T7i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X7i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 750D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Rebel T6i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X8i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 760D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Rebel T6s": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 8000D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X9i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 850D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Rebel T8i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X10i": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 9000D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 1200D": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL T5": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X70": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Hi": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 1300D": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Rebel T6": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 2000D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X90": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Rebel T7": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 4000D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Rebel T100": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 100D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL SL1": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X7": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 200D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL SL2": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 250D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS REBEL SL3": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 200D II": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS Kiss X9": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 7D": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 7D Mark II": {
+        "crop_factor": 1.605,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 90D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 80D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 77D": {
+        "crop_factor": 1.613,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 70D": {
+        "crop_factor": 1.6,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 60D": {
+        "crop_factor": 1.62,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 50D": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 40D": {
+        "crop_factor": 1.622,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 30D": {
+        "crop_factor": 1.6,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 20D": {
+        "crop_factor": 1.6,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS 10D": {
+        "crop_factor": 1.587,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS D60": {
+        "crop_factor": 1.587,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "Canon EOS D30": {
+        "crop_factor": 1.587,
+        "mounts": [
+          "Canon EF-S"
+        ]
+      },
+      "35mm film: full frame": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "EOS D2000": {
+        "crop_factor": 1.593,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "Canon EOS R5 Mark II": {
+        "crop_factor": 1.0,
+        "mounts": []
+      }
+    },
+    "Casio": {
+      "EX-Z750": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "casioZ750"
+        ]
+      },
+      "EX-P700": {
+        "crop_factor": 4.65,
+        "mounts": [
+          "casioP600"
+        ]
+      },
+      "EX-P600": {
+        "crop_factor": 4.65,
+        "mounts": [
+          "casioP600"
+        ]
+      },
+      "EX-Z4": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "casioZ4"
+        ]
+      },
+      "EX-Z3": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "casioZ4"
+        ]
+      },
+      "EX-Z55": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "casioZ4"
+        ]
+      },
+      "EX-Z40": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "casioZ4"
+        ]
+      },
+      "EX-Z30": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "casioZ4"
+        ]
+      },
+      "QV-4000": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "canonG2"
+        ]
+      },
+      "QV-3500EX": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "casioQV3500"
+        ]
+      },
+      "QV-3000EX": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "casioQV3500"
+        ]
+      },
+      "EX-FH20": {
+        "crop_factor": 5.68,
+        "mounts": [
+          "casioEX-FH20"
+        ]
+      }
+    },
+    "Fujifilm": {
+      "FinePix F11": {
+        "crop_factor": 4.5,
+        "mounts": [
+          "fujiF11"
+        ]
+      },
+      "FinePix F10": {
+        "crop_factor": 4.5,
+        "mounts": [
+          "fujiF11"
+        ]
+      },
+      "FinePix S9000": {
+        "crop_factor": 4.48,
+        "mounts": [
+          "fujiS9000"
+        ]
+      },
+      "FinePix S9500": {
+        "crop_factor": 4.48,
+        "mounts": [
+          "fujiS9000"
+        ]
+      },
+      "FinePix S9600": {
+        "crop_factor": 4.48,
+        "mounts": [
+          "fujiS9000"
+        ]
+      },
+      "FinePix S5500": {
+        "crop_factor": 6.491,
+        "mounts": [
+          "fujiS5500"
+        ]
+      },
+      "FinePix S5100": {
+        "crop_factor": 6.491,
+        "mounts": [
+          "fujiS5500"
+        ]
+      },
+      "FinePix S7000": {
+        "crop_factor": 4.487,
+        "mounts": [
+          "fuji602"
+        ]
+      },
+      "FinePix S20Pro": {
+        "crop_factor": 4.487,
+        "mounts": [
+          "fuji602"
+        ]
+      },
+      "FinePix S602 ZOOM": {
+        "crop_factor": 4.487,
+        "mounts": [
+          "fuji602"
+        ]
+      },
+      "FinePix F601 ZOOM": {
+        "crop_factor": 4.487,
+        "mounts": [
+          "fuji601"
+        ]
+      },
+      "FinePix F810": {
+        "crop_factor": 4.5,
+        "mounts": [
+          "fuji810"
+        ]
+      },
+      "FinePix F710": {
+        "crop_factor": 4.5,
+        "mounts": [
+          "fuji810"
+        ]
+      },
+      "FinePix E550": {
+        "crop_factor": 4.5,
+        "mounts": [
+          "fuji810"
+        ]
+      },
+      "FinePix 3800": {
+        "crop_factor": 6.3333333,
+        "mounts": [
+          "fuji2800"
+        ]
+      },
+      "FinePix S304": {
+        "crop_factor": 6.3333333,
+        "mounts": [
+          "fuji2800"
+        ]
+      },
+      "FinePix S3000": {
+        "crop_factor": 6.3333333,
+        "mounts": [
+          "fuji2800"
+        ]
+      },
+      "FinePix2800ZOOM": {
+        "crop_factor": 6.3333333,
+        "mounts": [
+          "fuji2800"
+        ]
+      },
+      "FinePix F200EXR": {
+        "crop_factor": 4.341,
+        "mounts": [
+          "fujiF200exr"
+        ]
+      },
+      "FinePix X100": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "fujix100"
+        ]
+      },
+      "X100S": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "fujix100"
+        ]
+      },
+      "X100T": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "fujix100"
+        ]
+      },
+      "X100F": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "fujix100"
+        ]
+      },
+      "X100V": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "fujix100v2"
+        ]
+      },
+      "X100VI": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "fujix100v2"
+        ]
+      },
+      "X10": {
+        "crop_factor": 3.93,
+        "mounts": [
+          "fujix10"
+        ]
+      },
+      "XF10": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "fujixf10"
+        ]
+      },
+      "X70": {
+        "crop_factor": 1.5375,
+        "mounts": [
+          "fujix70"
+        ]
+      },
+      "X20": {
+        "crop_factor": 3.93,
+        "mounts": [
+          "fujix10"
+        ]
+      },
+      "X30": {
+        "crop_factor": 3.93,
+        "mounts": [
+          "fujix10"
+        ]
+      },
+      "FinePix HS20EXR": {
+        "crop_factor": 5.71,
+        "mounts": [
+          "fujihs20exr"
+        ]
+      },
+      "FinePix HS30EXR": {
+        "crop_factor": 5.71,
+        "mounts": [
+          "fujihs20exr"
+        ]
+      },
+      "FinePix F770EXR": {
+        "crop_factor": 5.43,
+        "mounts": [
+          "fujif770exr"
+        ]
+      },
+      "FinePix S5600": {
+        "crop_factor": 6.03,
+        "mounts": [
+          "fujiS5600"
+        ]
+      },
+      "XQ1": {
+        "crop_factor": 3.91,
+        "mounts": [
+          "fujiXQ1"
+        ]
+      },
+      "FinePix A370": {
+        "crop_factor": 6.03,
+        "mounts": [
+          "fujiA370"
+        ]
+      },
+      "X-S1": {
+        "crop_factor": 3.93,
+        "mounts": [
+          "fujiXS1"
+        ]
+      },
+      "GFX100RF": {
+        "crop_factor": 0.8,
+        "mounts": [
+          "fujiGFX100RF"
+        ]
+      },
+      "X-Pro1": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-Pro2": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-E1": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-E2": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-E2S": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-E3": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-E4": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-E5": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T1": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T2": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T3": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T4": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T5": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-Pro3": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-H1": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-H2": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-H2S": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-M1": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-M5": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-A1": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-A2": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T10": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T20": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T30": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T30 II": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T30 III": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T50": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-S10": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-S20": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T100": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-T200": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-A3": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-A5": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-A7": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "X-A10": {
+        "crop_factor": 1.529,
+        "mounts": [
+          "Fujifilm X"
+        ]
+      },
+      "GFX 50R": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "GFX 50S": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "GFX50S II": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "GFX 100": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "GFX100S": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "GFX100S II": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "GFX100 II": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Fujifilm G"
+        ]
+      },
+      "FinePixS1Pro": {
+        "crop_factor": 1.543,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "FinePixS2Pro": {
+        "crop_factor": 1.543,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "FinePix S3Pro": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "FinePix S5Pro": {
+        "crop_factor": 1.56,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "IS Pro": {
+        "crop_factor": 1.56,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Fujifilm X-T5": {
+        "crop_factor": 1.5,
+        "mounts": []
+      }
+    },
+    "Kodak": {
+      "Kodak DC120 ZOOM Digital Camera": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "kodakDC120"
+        ]
+      },
+      "Kodak Digital Science DC50 Zoom Camera": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "kodakDC50"
+        ]
+      },
+      "Kodak CX6330 Zoom Digital Camera": {
+        "crop_factor": 6.593,
+        "mounts": [
+          "kodakCX6330"
+        ]
+      },
+      "Kodak CX7525 Zoom Digital Camera": {
+        "crop_factor": 6.07,
+        "mounts": [
+          "kodakCX6330"
+        ]
+      },
+      "DCS Pro SLR/c": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "DCS520": {
+        "crop_factor": 1.593,
+        "mounts": [
+          "Canon EF"
+        ]
+      },
+      "DCS Pro SLR/n": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "DCS Pro 14nx": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "DCS Pro 14N": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      }
+    },
+    "Konica Minolta": {
+      "DiMAGE Z6": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "kmZ3"
+        ]
+      },
+      "DiMAGE Z5": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "kmZ3"
+        ]
+      },
+      "DiMAGE Z3": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "kmZ3"
+        ]
+      },
+      "DiMAGE Z2": {
+        "crop_factor": 6.03,
+        "mounts": [
+          "kmZ2"
+        ]
+      },
+      "DiMAGE Z20": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "kmZ10"
+        ]
+      },
+      "DiMAGE Z10": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "kmZ10"
+        ]
+      },
+      "DiMAGE A200": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "kmD7"
+        ]
+      },
+      "DiMAGE A2": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "kmD7"
+        ]
+      },
+      "DiMAGE G400": {
+        "crop_factor": 6.144,
+        "mounts": [
+          "kmG400"
+        ]
+      },
+      "Revio KD-420Z": {
+        "crop_factor": 6.144,
+        "mounts": [
+          "kmG400"
+        ]
+      },
+      "Maxxum 5D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Minolta AF"
+        ]
+      },
+      "Dynax 5D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Minolta AF"
+        ]
+      },
+      "Maxxum 7D": {
+        "crop_factor": 1.522,
+        "mounts": [
+          "Minolta AF"
+        ]
+      },
+      "Dynax 7D": {
+        "crop_factor": 1.522,
+        "mounts": [
+          "Minolta AF"
+        ]
+      }
+    },
+    "Minolta": {
+      "DiMAGE Z1": {
+        "crop_factor": 6.545,
+        "mounts": [
+          "kmZ1"
+        ]
+      },
+      "DiMAGE A1": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "kmD7"
+        ]
+      },
+      "DiMAGE 7Hi": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "kmD7"
+        ]
+      },
+      "DiMAGE 7i": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "kmD7"
+        ]
+      },
+      "DiMAGE 7": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "kmD7"
+        ]
+      },
+      "DiMAGE Xt": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "kmXt"
+        ]
+      },
+      "DiMAGE Xi": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "kmXt"
+        ]
+      },
+      "DiMAGE X": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "kmXt"
+        ]
+      }
+    },
+    "Leica": {
+      "Digilux 2": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "leicaDigilux2"
+        ]
+      },
+      "D-Lux2": {
+        "crop_factor": 4.45,
+        "mounts": [
+          "panasonicLX1"
+        ]
+      },
+      "C-Lux": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "D-Lux 4": {
+        "crop_factor": 4.33,
+        "mounts": [
+          "panasonicLX4"
+        ]
+      },
+      "D-Lux 3": {
+        "crop_factor": 4.33,
+        "mounts": [
+          "panasonicLX3"
+        ]
+      },
+      "Leica Q (Typ 116)": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "leicaQTyp116"
+        ]
+      },
+      "Leica Q2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "leicaQ2"
+        ]
+      },
+      "Leica Q2 Mono": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "leicaQ2"
+        ]
+      },
+      "Leica Q3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "leicaQ2"
+        ]
+      },
+      "LEICA Q3 43": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "leicaQ343"
+        ]
+      },
+      "Leica Q3 Mono": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "leicaQ2"
+        ]
+      },
+      "Leica X Vario (Typ 107)": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "leicaXVario107"
+        ]
+      },
+      "Leica SL (Typ 601)": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica SL2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica SL2-S": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica SL3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica SL3-S": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica T (Typ 701)": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica TL": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica TL2": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Leica CL": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Digilux 3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "Leica M (Typ 240)": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M EV1": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M Monochrom (Typ 246)": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "M8 Digital Camera": {
+        "crop_factor": 1.33,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "M9 Digital Camera": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M10": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M10 Monochrom": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M10-D": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M10-P": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M10-R": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M11": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M11 Monochrom": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M11-P": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      },
+      "Leica M11-D": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica M"
+        ]
+      }
+    },
+    "Nikon": {
+      "Coolpix P60": {
+        "crop_factor": 5.62,
+        "mounts": [
+          "nikonP60"
+        ]
+      },
+      "E8800": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "nikon8800"
+        ]
+      },
+      "E8700": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "nikon5700"
+        ]
+      },
+      "E5700": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "nikon5700"
+        ]
+      },
+      "E7900": {
+        "crop_factor": 4.86,
+        "mounts": [
+          "nikon7900"
+        ]
+      },
+      "E7600": {
+        "crop_factor": 4.86,
+        "mounts": [
+          "nikon7900"
+        ]
+      },
+      "E5900": {
+        "crop_factor": 4.86,
+        "mounts": [
+          "nikon7900"
+        ]
+      },
+      "E5200": {
+        "crop_factor": 4.86,
+        "mounts": [
+          "nikon7900"
+        ]
+      },
+      "E4200": {
+        "crop_factor": 4.86,
+        "mounts": [
+          "nikon7900"
+        ]
+      },
+      "E5400": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "nikon5400"
+        ]
+      },
+      "E5000": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "nikon5000"
+        ]
+      },
+      "E4800": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "nikon4800"
+        ]
+      },
+      "E4500": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "nikon4500"
+        ]
+      },
+      "E995": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "nikon995"
+        ]
+      },
+      "E990": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "nikon990"
+        ]
+      },
+      "E950": {
+        "crop_factor": 5.408,
+        "mounts": [
+          "nikon950"
+        ]
+      },
+      "Coolpix P330": {
+        "crop_factor": 4.706,
+        "mounts": [
+          "nikonP330"
+        ]
+      },
+      "Coolpix P340": {
+        "crop_factor": 4.706,
+        "mounts": [
+          "nikonP330"
+        ]
+      },
+      "Coolpix S3300": {
+        "crop_factor": 5.65,
+        "mounts": [
+          "nikonS3300"
+        ]
+      },
+      "Coolpix P1000": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "nikonP1000"
+        ]
+      },
+      "Coolpix P1100": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "nikonP1000"
+        ]
+      },
+      "Coolpix P6000": {
+        "crop_factor": 4.6,
+        "mounts": [
+          "nikonP6000"
+        ]
+      },
+      "E8400": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "nikon8400"
+        ]
+      },
+      "Coolpix P7000": {
+        "crop_factor": 4.69,
+        "mounts": [
+          "nikonP7000"
+        ]
+      },
+      "Coolpix P7800": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "nikonP7800"
+        ]
+      },
+      "Coolpix A": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "nikonA"
+        ]
+      },
+      "Nikon 1 S1": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 V1": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 J1": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 AW1": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 S2": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 V2": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 J2": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 V3": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 J3": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 J4": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon 1 J5": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Nikon CX"
+        ]
+      },
+      "Nikon Z 5": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z5_2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 6": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 6_2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z6_3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 7": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 7_2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z8": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 9": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z f": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon ZR": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 30": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z 50": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z50_2": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon Z fc": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Nikon Z"
+        ]
+      },
+      "Nikon D40": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D40X": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D50": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D60": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D70": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D70s": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D80": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D90": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D100": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D200": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D300": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D300S": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D500": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D600": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D610": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D700": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D750": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D780": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D800": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D800E": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D810": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D850": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3000": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3100": {
+        "crop_factor": 1.558,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3200": {
+        "crop_factor": 1.554,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3300": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3400": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3500": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5000": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5100": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5200": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5300": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5500": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5600": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D7000": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D7100": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D7200": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D7500": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D1": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D1H": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D1X": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D2H": {
+        "crop_factor": 1.546,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D2Hs": {
+        "crop_factor": 1.546,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D2X": {
+        "crop_factor": 1.522,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D2Xs": {
+        "crop_factor": 1.522,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3X": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D3S": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D4": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D4s": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D5": {
+        "crop_factor": 1.003,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon D6": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "Nikon Df": {
+        "crop_factor": 1.001,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      },
+      "35mm film: full frame": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Nikon F AF"
+        ]
+      }
+    },
+    "Olympus": {
+      "C8080WZ": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "olympus8080"
+        ]
+      },
+      "u-miniD,Stylus V": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "olympusStylusV"
+        ]
+      },
+      "C70Z,C7000Z": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "olympus7000"
+        ]
+      },
+      "C4100Z,C4000Z": {
+        "crop_factor": 4.92,
+        "mounts": [
+          "olympus4000"
+        ]
+      },
+      "X-2,C-50Z": {
+        "crop_factor": 4.9,
+        "mounts": [
+          "olympusC50"
+        ]
+      },
+      "C750UZ": {
+        "crop_factor": 6.03,
+        "mounts": [
+          "olympus750"
+        ]
+      },
+      "C730UZ": {
+        "crop_factor": 6.52,
+        "mounts": [
+          "olympus700"
+        ]
+      },
+      "C700UZ": {
+        "crop_factor": 6.52,
+        "mounts": [
+          "olympus700"
+        ]
+      },
+      "C7070WZ": {
+        "crop_factor": 4.93,
+        "mounts": [
+          "olympus5060"
+        ]
+      },
+      "C5060WZ": {
+        "crop_factor": 4.93,
+        "mounts": [
+          "olympus5060"
+        ]
+      },
+      "C5050Z": {
+        "crop_factor": 4.93,
+        "mounts": [
+          "olympus2040"
+        ]
+      },
+      "C4040Z": {
+        "crop_factor": 4.93,
+        "mounts": [
+          "olympus2040"
+        ]
+      },
+      "C3040Z": {
+        "crop_factor": 4.93,
+        "mounts": [
+          "olympus2040"
+        ]
+      },
+      "C2040Z": {
+        "crop_factor": 4.93,
+        "mounts": [
+          "olympus2040"
+        ]
+      },
+      "C860L,D360L": {
+        "crop_factor": 6.563,
+        "mounts": [
+          "olympusC860"
+        ]
+      },
+      "mju-II": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "olympusEpic"
+        ]
+      },
+      "Stylus Epic": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "olympusEpic"
+        ]
+      },
+      "SP350": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "olympusSP350"
+        ]
+      },
+      "SP500UZ": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "olympusSP500"
+        ]
+      },
+      "SP560UZ": {
+        "crop_factor": 5.8,
+        "mounts": [
+          "olympusSP560"
+        ]
+      },
+      "XZ-1": {
+        "crop_factor": 4.68,
+        "mounts": [
+          "olympusxz1"
+        ]
+      },
+      "XZ-2": {
+        "crop_factor": 4.68,
+        "mounts": [
+          "olympusxz1"
+        ]
+      },
+      "Stylus1": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "olympusStylus1"
+        ]
+      },
+      "Stylus1,1s": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "olympusStylus1"
+        ]
+      },
+      "TG-1": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "olympusToughTG4"
+        ]
+      },
+      "TG-2": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "olympusToughTG4"
+        ]
+      },
+      "TG-3": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "olympusToughTG4"
+        ]
+      },
+      "TG-4": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "olympusToughTG4"
+        ]
+      },
+      "TG-5": {
+        "crop_factor": 5.62,
+        "mounts": [
+          "olympusToughTG5"
+        ]
+      },
+      "TG-6": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "olympusToughTG4"
+        ]
+      },
+      "E-P1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-P2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-P3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-P5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-P7": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL1s": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL6": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL7": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL8": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PL9": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PM1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-PM2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M1MarkII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M1MarkIII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M5MarkII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M5MarkIII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M10": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M10MarkII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M10 Mark III": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M10MarkIIIS": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-M10MarkIV": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "PEN-F": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "E-300": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-330": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-400": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-410": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-420": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-450": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-500": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-510": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-520": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-600": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-620": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-10": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "olympusE10"
+        ]
+      },
+      "E-20,E-20N,E-20P": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "olympusE10"
+        ]
+      },
+      "E-30": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "E-5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      }
+    },
+    "Panasonic": {
+      "DMC-LX1": {
+        "crop_factor": 4.45,
+        "mounts": [
+          "panasonicLX1"
+        ]
+      },
+      "DMC-LX3": {
+        "crop_factor": 4.7,
+        "mounts": [
+          "panasonicLX3"
+        ]
+      },
+      "DMC-LX5": {
+        "crop_factor": 4.71,
+        "mounts": [
+          "panasonicLX5"
+        ]
+      },
+      "DMC-LX7": {
+        "crop_factor": 5.1,
+        "mounts": [
+          "panasonicLX7"
+        ]
+      },
+      "DMC-LX10": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicLX10"
+        ]
+      },
+      "DMC-LX15": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicLX10"
+        ]
+      },
+      "DMC-LC1": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "leicaDigilux2"
+        ]
+      },
+      "DMC-LZ2": {
+        "crop_factor": 6.06,
+        "mounts": [
+          "panasonicLZ2"
+        ]
+      },
+      "DMC-LZ1": {
+        "crop_factor": 6.06,
+        "mounts": [
+          "panasonicLZ2"
+        ]
+      },
+      "DMC-FX9": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "panasonicFX7"
+        ]
+      },
+      "DMC-FX8": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "panasonicFX7"
+        ]
+      },
+      "DMC-FX7": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "panasonicFX7"
+        ]
+      },
+      "DMC-FX2": {
+        "crop_factor": 6.05,
+        "mounts": [
+          "panasonicFX7"
+        ]
+      },
+      "DMC-FZ30": {
+        "crop_factor": 4.73,
+        "mounts": [
+          "panasonicFZ30"
+        ]
+      },
+      "DMC-FZ20": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "panasonicFZ10"
+        ]
+      },
+      "DMC-FZ10": {
+        "crop_factor": 5.84,
+        "mounts": [
+          "panasonicFZ10"
+        ]
+      },
+      "DMC-FZ5": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "panasonicFZ5"
+        ]
+      },
+      "DMC-FZ3": {
+        "crop_factor": 7.6,
+        "mounts": [
+          "panasonicFZ3"
+        ]
+      },
+      "DMC-FZ28": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "panasonicFZ28"
+        ]
+      },
+      "DMC-FX150": {
+        "crop_factor": 4.7,
+        "mounts": [
+          "panasonicFX150"
+        ]
+      },
+      "DMC-LX2": {
+        "crop_factor": 4.44,
+        "mounts": [
+          "panasonicDMCLX2"
+        ]
+      },
+      "DMC-FZ18": {
+        "crop_factor": 6.1,
+        "mounts": [
+          "panasonicDMCFZ18"
+        ]
+      },
+      "DMC-FZ35": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "panasonicDMCFZ35"
+        ]
+      },
+      "DMC-FZ40": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "panasonicDMCFZ45"
+        ]
+      },
+      "DMC-FZ40 (3:2)": {
+        "crop_factor": 5.81,
+        "mounts": [
+          "panasonicDMCFZ45"
+        ]
+      },
+      "DMC-FZ45": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "panasonicDMCFZ45"
+        ]
+      },
+      "DMC-FZ45 (3:2)": {
+        "crop_factor": 5.81,
+        "mounts": [
+          "panasonicDMCFZ45"
+        ]
+      },
+      "DMC-FZ50": {
+        "crop_factor": 4.84,
+        "mounts": [
+          "panasonicDMCFZ50"
+        ]
+      },
+      "DMC-FZ8": {
+        "crop_factor": 6.02,
+        "mounts": [
+          "panasonicDMCFZ8"
+        ]
+      },
+      "DMC-FZ100": {
+        "crop_factor": 5.6,
+        "mounts": [
+          "panasonicDMCFZ45"
+        ]
+      },
+      "DMC-FZ100 (3:2)": {
+        "crop_factor": 5.81,
+        "mounts": [
+          "panasonicDMCFZ45"
+        ]
+      },
+      "DMC-FZ200": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "panasonicDMCFZ200"
+        ]
+      },
+      "DMC-FZ300": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "panasonicDMCFZ200"
+        ]
+      },
+      "DMC-FZ330": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "panasonicDMCFZ200"
+        ]
+      },
+      "DMC-LX100": {
+        "crop_factor": 2.21,
+        "mounts": [
+          "panasonicDMCLX100"
+        ]
+      },
+      "DC-LX100M2": {
+        "crop_factor": 2.21,
+        "mounts": [
+          "panasonicDMCLX100"
+        ]
+      },
+      "DMC-FZ1000": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicFZ1000"
+        ]
+      },
+      "DMC-FZ2000": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicFZ2000"
+        ]
+      },
+      "DMC-FZ2500": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicFZ2000"
+        ]
+      },
+      "DC-FZ10002": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicFZ1000"
+        ]
+      },
+      "DMC-FZ150": {
+        "crop_factor": 5.56,
+        "mounts": [
+          "panasonicFZ150"
+        ]
+      },
+      "DMC-LF1": {
+        "crop_factor": 4.67,
+        "mounts": [
+          "panasonicLF1"
+        ]
+      },
+      "DMC-TZ60": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-TZ61": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-ZS40": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-TZ70": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-TZ71": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-ZS50": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-TZ80": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-TZ81": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-ZS60": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DC-TZ90": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DC-TZ91": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DC-TZ96": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DC-TZ99": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DC-ZS70": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "panasonicTZ70"
+        ]
+      },
+      "DMC-TZ100": {
+        "crop_factor": 2.75,
+        "mounts": [
+          "panasonicTZ100"
+        ]
+      },
+      "DMC-TZ101": {
+        "crop_factor": 2.75,
+        "mounts": [
+          "panasonicTZ100"
+        ]
+      },
+      "DMC-TZ110": {
+        "crop_factor": 2.75,
+        "mounts": [
+          "panasonicTZ100"
+        ]
+      },
+      "DMC-ZS100": {
+        "crop_factor": 2.75,
+        "mounts": [
+          "panasonicTZ100"
+        ]
+      },
+      "DMC-ZS110": {
+        "crop_factor": 2.75,
+        "mounts": [
+          "panasonicTZ100"
+        ]
+      },
+      "DC-ZS200": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DC-ZS220": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DC-TZ200": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DC-TZ200D": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DC-ZS200D": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DC-TZ220": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DC-TZ202": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "panasonicZS200"
+        ]
+      },
+      "DMC-G1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GH1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GM1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GX1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GH2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GH3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GH4": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GH5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GH5M2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GH5S": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GH6": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GH7": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G9": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G9M2": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GX9": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GX7MK3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G100": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G100D": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G110": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G6": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF6": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G7": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF7": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GX7": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G70": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G10": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GM5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GF8": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GX8": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G80": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G81": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G85": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-G8": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GX80": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DMC-GX85": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GX800": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-GX880": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G90": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G91": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G95": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G99": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G95D": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G99D": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-G97": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "DC-S1": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S1M2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S1M2ES": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S1H": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S1R": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S1RM2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S5": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S5D": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S5M2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S5M2X": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DC-S9": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "DMC-L1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      },
+      "DMC-L10": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "4/3 System"
+        ]
+      }
+    },
+    "Pentax": {
+      "Pentax Optio 43WR": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "pentax43WR"
+        ]
+      },
+      "Pentax Optio 750Z": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "pentax750"
+        ]
+      },
+      "Pentax Optio 555": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "pentax750"
+        ]
+      },
+      "Pentax Optio 550": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "pentax750"
+        ]
+      },
+      "Pentax Optio 450": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "pentax750"
+        ]
+      },
+      "Pentax Optio 33LF": {
+        "crop_factor": 6.563,
+        "mounts": [
+          "pentax230"
+        ]
+      },
+      "Pentax Optio 33L": {
+        "crop_factor": 6.563,
+        "mounts": [
+          "pentax230"
+        ]
+      },
+      "Pentax Optio 230GS": {
+        "crop_factor": 6.563,
+        "mounts": [
+          "pentax230"
+        ]
+      },
+      "Pentax Optio 330GS": {
+        "crop_factor": 6.563,
+        "mounts": [
+          "pentax230"
+        ]
+      },
+      "Pentax Optio 430": {
+        "crop_factor": 4.85,
+        "mounts": [
+          "pentax430"
+        ]
+      },
+      "Pentax Q": {
+        "crop_factor": 5.53,
+        "mounts": [
+          "Pentax Q"
+        ]
+      },
+      "Pentax Q7": {
+        "crop_factor": 4.6,
+        "mounts": [
+          "Pentax Q"
+        ]
+      },
+      "Pentax Q10": {
+        "crop_factor": 5.53,
+        "mounts": [
+          "Pentax Q"
+        ]
+      },
+      "Pentax Q-S1": {
+        "crop_factor": 4.6,
+        "mounts": [
+          "Pentax Q"
+        ]
+      },
+      "35mm film: full frame": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax *ist DL2": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax *ist DL": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax *ist DS2": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax *ist DS": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax *ist D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-m": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K100D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K100D Super": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K110D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K10D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K20D": {
+        "crop_factor": 1.538,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-30": {
+        "crop_factor": 1.526,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-50": {
+        "crop_factor": 1.526,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-500": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-7": {
+        "crop_factor": 1.538,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-5": {
+        "crop_factor": 1.526,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-5 II": {
+        "crop_factor": 1.526,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-5 II s": {
+        "crop_factor": 1.526,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K2000": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K200D": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-x": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-r": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-01": {
+        "crop_factor": 1.522,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax 645D": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Pentax 645AF2"
+        ]
+      }
+    },
+    "Ricoh": {
+      "GR Digital": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "ricohGRdigital"
+        ]
+      },
+      "Caplio GX8": {
+        "crop_factor": 4.9,
+        "mounts": [
+          "ricohGX"
+        ]
+      },
+      "Caplio GX": {
+        "crop_factor": 4.9,
+        "mounts": [
+          "ricohGX"
+        ]
+      },
+      "Caplio RR30": {
+        "crop_factor": 6.4,
+        "mounts": [
+          "ricohRR30"
+        ]
+      },
+      "GR": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "ricohGR"
+        ]
+      },
+      "Ricoh GR III": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "ricohGRIII"
+        ]
+      },
+      "Ricoh GR III HDF": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "ricohGRIII"
+        ]
+      },
+      "Ricoh GR IIIx": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "ricohGRIIIx"
+        ]
+      },
+      "Ricoh GR IIIx HDF": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "ricohGRIIIx"
+        ]
+      },
+      "Ricoh GR IV": {
+        "crop_factor": 1.53,
+        "mounts": [
+          "ricohGRIV"
+        ]
+      },
+      "Pentax K-3": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-3 II": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-3 Mark III": {
+        "crop_factor": 1.546,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-3 Mark III Monochrome": {
+        "crop_factor": 1.546,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-1": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax KAF4"
+        ]
+      },
+      "Pentax K-1 Mark II": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax KAF4"
+        ]
+      },
+      "Pentax K-S2": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-S1": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax K-70": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF4"
+        ]
+      },
+      "Pentax KF": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax KP": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "Pentax 645Z": {
+        "crop_factor": 0.79,
+        "mounts": [
+          "Pentax 645AF2"
+        ]
+      }
+    },
+    "Samsung": {
+      "WB2000": {
+        "crop_factor": 5.69,
+        "mounts": [
+          "samsungWB2000"
+        ]
+      },
+      "SM-G935F": {
+        "crop_factor": 6.19,
+        "mounts": [
+          "samsungS7"
+        ]
+      },
+      "SM-G950F": {
+        "crop_factor": 6.19,
+        "mounts": [
+          "samsungS8"
+        ]
+      },
+      "SM-G9500": {
+        "crop_factor": 6.19,
+        "mounts": [
+          "samsungS8"
+        ]
+      },
+      "SM-N950U": {
+        "crop_factor": 6.047,
+        "mounts": [
+          "samsungS8wide"
+        ]
+      },
+      "SM-G991B": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "samsungS21uw"
+        ]
+      },
+      "EX2F": {
+        "crop_factor": 4.6,
+        "mounts": [
+          "samsungEx2f"
+        ]
+      },
+      "EK-GN120": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX10": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX11": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX100": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX1000": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX20": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX200": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX210": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX300": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX300M": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX500": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX1100": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX2000": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX3000": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX1": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX5": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX30": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Samsung NX"
+        ]
+      },
+      "NX mini": {
+        "crop_factor": 2.727,
+        "mounts": [
+          "Samsung NX mini"
+        ]
+      },
+      "SAMSUNG GX10": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "GX20": {
+        "crop_factor": 1.538,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "GX-1S": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      },
+      "GX-1L": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "Pentax KAF2"
+        ]
+      }
+    },
+    "Sigma": {
+      "Sigma DP1": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "sigmaDP1"
+        ]
+      },
+      "Sigma DP1 Merrill": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "sigmaDP1M"
+        ]
+      },
+      "Sigma DP1S": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "sigmaDP1"
+        ]
+      },
+      "Sigma DP1X": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "sigmaDP1"
+        ]
+      },
+      "Sigma DP2": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "sigmaDP2"
+        ]
+      },
+      "Sigma DP2 Merrill": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "sigmaDP2M"
+        ]
+      },
+      "Sigma DP2S": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "sigmaDP2"
+        ]
+      },
+      "Sigma DP2X": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "sigmaDP2"
+        ]
+      },
+      "Sigma DP3 Merrill": {
+        "crop_factor": 1.531,
+        "mounts": [
+          "sigmaDP3M"
+        ]
+      },
+      "Sigma BF": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Sigma fp": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "Sigma fp L": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Leica L"
+        ]
+      },
+      "sd Quattro": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "sd Quattro H": {
+        "crop_factor": 1.346,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "Sigma SD1": {
+        "crop_factor": 1.5,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "Sigma SD1 Merrill": {
+        "crop_factor": 1.5,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "Sigma SD9": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "Sigma SD10": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "Sigma SD14": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "Sigma SA"
+        ]
+      },
+      "Sigma SD15": {
+        "crop_factor": 1.739,
+        "mounts": [
+          "Sigma SA"
+        ]
+      }
+    },
+    "Sony": {
+      "DSC-R1": {
+        "crop_factor": 1.68,
+        "mounts": [
+          "sonyR1"
+        ]
+      },
+      "DSC-H1": {
+        "crop_factor": 6.0,
+        "mounts": [
+          "sonyH1"
+        ]
+      },
+      "DSC-F828": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "sony828"
+        ]
+      },
+      "Cybershot": {
+        "crop_factor": 3.933,
+        "mounts": [
+          "sony707",
+          "sonyS85"
+        ]
+      },
+      "DSC-P200": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-P150": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-P100": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-P93": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-W12": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-W7": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-W15": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-W5": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-W1": {
+        "crop_factor": 4.8,
+        "mounts": [
+          "sonyW1"
+        ]
+      },
+      "DSC-V3": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "sonyV1"
+        ]
+      },
+      "DSC-V1": {
+        "crop_factor": 4.843,
+        "mounts": [
+          "sonyV1"
+        ]
+      },
+      "DSC-T1": {
+        "crop_factor": 5.65,
+        "mounts": [
+          "sonyT1"
+        ]
+      },
+      "DSC-S90": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "sonyS60"
+        ]
+      },
+      "DSC-ST80": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "sonyS60"
+        ]
+      },
+      "DSC-S80": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "sonyS60"
+        ]
+      },
+      "DSC-S60": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "sonyS60"
+        ]
+      },
+      "DSC-P73": {
+        "crop_factor": 6.5,
+        "mounts": [
+          "sonyS60"
+        ]
+      },
+      "DSC-RX100": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX100"
+        ]
+      },
+      "DSC-RX100M2": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX100II"
+        ]
+      },
+      "DSC-RX100M3": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX100III"
+        ]
+      },
+      "DSC-RX100M4": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX100III"
+        ]
+      },
+      "DSC-RX100M5": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX100III"
+        ]
+      },
+      "DSC-RX100M6": {
+        "crop_factor": 2.66,
+        "mounts": [
+          "sonyRX100VI"
+        ]
+      },
+      "DSC-RX100M7": {
+        "crop_factor": 2.66,
+        "mounts": [
+          "sonyRX100VI"
+        ]
+      },
+      "DSC-RX100M7A": {
+        "crop_factor": 2.66,
+        "mounts": [
+          "sonyRX100VI"
+        ]
+      },
+      "DSC-RX100M5A": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX100III"
+        ]
+      },
+      "DSC-HX300": {
+        "crop_factor": 5.58,
+        "mounts": [
+          "sonyHX300"
+        ]
+      },
+      "DSC-HX20V": {
+        "crop_factor": 5.62,
+        "mounts": [
+          "sonyHX20V"
+        ]
+      },
+      "Xperia Z3": {
+        "crop_factor": 7.87,
+        "mounts": [
+          "sonyXperiaZ3"
+        ]
+      },
+      "DSC-RX10": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX10"
+        ]
+      },
+      "DSC-RX10M2": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX10II"
+        ]
+      },
+      "DSC-RX10M3": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX10III"
+        ]
+      },
+      "DSC-RX10M4": {
+        "crop_factor": 2.73,
+        "mounts": [
+          "sonyRX10III"
+        ]
+      },
+      "DSC-RX1R": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "sonyRX1"
+        ]
+      },
+      "DSC-RX1RM2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "sonyRX1"
+        ]
+      },
+      "DSC-RX1RM3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "sonyRX1"
+        ]
+      },
+      "DSC-RX0": {
+        "crop_factor": 2.7,
+        "mounts": [
+          "sonyRX0M2"
+        ]
+      },
+      "DSC-RX0M2": {
+        "crop_factor": 2.7,
+        "mounts": [
+          "sonyRX0M2"
+        ]
+      },
+      "ZV-1": {
+        "crop_factor": 2.7,
+        "mounts": [
+          "sonyZV1"
+        ]
+      },
+      "NEX-3": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-C3": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-F3": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-3N": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-5": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-5N": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-5R": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-5T": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-6": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "NEX-7": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6000": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-3000": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-5000": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-5100": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7R": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7M3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM3A": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7M4": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7M5": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM4": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM4A": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM5": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7RM6": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7S": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7M2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7C": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7CM2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7CR": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7SM2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-7SM3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6100": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6100A": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6300": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6400": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6400A": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6500": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6600": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-6700": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-9": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-9M2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-9M3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-1": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILCE-1M2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILME-FX2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILME-FX3": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ILME-FX30": {
+        "crop_factor": 1.546,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ZV-E1": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ZV-E10": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "ZV-E10M2": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony E"
+        ]
+      },
+      "SLT-A33": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A35": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A37": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A55V": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A57": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A58": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A65V": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "ILCA-68": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A77V": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "ILCA-77M2": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A99": {
+        "crop_factor": 1.005,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "SLT-A99V": {
+        "crop_factor": 1.005,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A100": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A200": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A230": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A290": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A300": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A330": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A350": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A380": {
+        "crop_factor": 1.528,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A390": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A450": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A500": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A550": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A560": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A580": {
+        "crop_factor": 1.523,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A700": {
+        "crop_factor": 1.534,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A850": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "DSLR-A900": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "ILCA-99M2": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Sony Alpha"
+        ]
+      },
+      "Sony Alpha 1 II / Alpha 1 Mark II": {
+        "crop_factor": 1.0,
+        "mounts": []
+      },
+      "Sony Alpha 1": {
+        "crop_factor": 1.0,
+        "mounts": []
+      },
+      "Sony Alpha 7R V": {
+        "crop_factor": 1.0,
+        "mounts": []
+      },
+      "Sony Alpha 7R VI": {
+        "crop_factor": 1.0,
+        "mounts": []
+      }
+    },
+    "Contax": {
+      "35mm film: full frame": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Contax/Yashica"
+        ]
+      }
+    },
+    "Epson": {
+      "R-D1": {
+        "crop_factor": 1.525,
+        "mounts": [
+          "Leica M"
+        ]
+      }
+    },
+    "YI Technology": {
+      "M1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      }
+    },
+    "OM System": {
+      "OM-1": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "OM-1MarkII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "OM-3": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "OM-5": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      },
+      "OM-5MarkII": {
+        "crop_factor": 2.0,
+        "mounts": [
+          "Micro 4/3 System"
+        ]
+      }
+    },
+    "KMZ": {
+      "Zenit 122": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "M42"
+        ]
+      },
+      "Zenit 122K": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax K"
+        ]
+      },
+      "Zenit 212K": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax K"
+        ]
+      },
+      "Zenit 312K": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax K"
+        ]
+      },
+      "Zenit 412LS": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "M42"
+        ]
+      },
+      "Zenit KM": {
+        "crop_factor": 1.0,
+        "mounts": [
+          "Pentax K"
+        ]
+      }
+    }
+  }
+}
