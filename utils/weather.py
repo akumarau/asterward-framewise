@@ -42,22 +42,22 @@ def load_known_locations(path: Path = KNOWN_LOCATIONS_PATH) -> list[dict[str, An
 
 def known_location_candidates(query: str, path: Path = KNOWN_LOCATIONS_PATH, limit: int = 5) -> list[LocationResult]:
     """Return fallback location candidates from local known landmarks."""
-    normalised_query = _normalize_location_text(query)
-    if not normalised_query:
+    normalized_query = _normalize_location_text(query)
+    if not normalized_query:
         return []
 
     scored: list[tuple[int, LocationResult]] = []
     for item in load_known_locations(path):
         aliases = item.get("aliases", [])
         names = [item.get("name", ""), item.get("admin1", ""), item.get("country", ""), *aliases]
-        normalised_names = [_normalize_location_text(name) for name in names if name]
+        normalized_names = [_normalize_location_text(name) for name in names if name]
 
         score = 0
-        if any(normalised_query == name for name in normalised_names):
+        if any(normalized_query == name for name in normalized_names):
             score = 100
-        elif any(normalised_query in name for name in normalised_names):
+        elif any(normalized_query in name for name in normalized_names):
             score = 80
-        elif any(name and name in normalised_query for name in normalised_names):
+        elif any(name and name in normalized_query for name in normalized_names):
             score = 70
 
         if score > 0:

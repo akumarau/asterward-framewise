@@ -16,7 +16,7 @@ TOKEN_BASE_SCORE = 40
 TOKEN_COVERAGE_MULTIPLIER = 30
 
 
-def _normalise(text: str) -> str:
+def _normalize(text: str) -> str:
     """Normalise user-entered camera names for forgiving lookup."""
     value = text.lower().replace("α", "alpha")
     value = value.replace("-", " ").replace("_", " ")
@@ -52,7 +52,7 @@ def camera_match_candidates(
 ) -> list[dict[str, Any]]:
     """Return ranked camera candidates for forgiving user input."""
     specs = specs or load_camera_specs()
-    query = _normalise(camera_model)
+    query = _normalize(camera_model)
     query_compact = _compact_key(camera_model)
     if not query:
         return []
@@ -66,18 +66,18 @@ def camera_match_candidates(
         for name in names:
             if not name:
                 continue
-            normalised_name = _normalise(name)
+            normalized_name = _normalize(name)
             compact_name = _compact_key(name)
             score = 0
             basis = "weak token overlap"
 
-            if query == normalised_name or query_compact == compact_name:
+            if query == normalized_name or query_compact == compact_name:
                 score = 100
                 basis = "exact alias match"
-            elif query and query in normalised_name:
+            elif query and query in normalized_name:
                 score = 85
                 basis = "partial alias match"
-            elif normalised_name and normalised_name in query:
+            elif normalized_name and normalized_name in query:
                 score = 80
                 basis = "camera alias found inside input"
             elif query_compact and query_compact in compact_name:
@@ -87,7 +87,7 @@ def camera_match_candidates(
                 score = 70
                 basis = "compact alias found inside input"
             else:
-                score = _token_score(query, normalised_name)
+                score = _token_score(query, normalized_name)
                 if score:
                     basis = "token overlap match"
 

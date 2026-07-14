@@ -200,6 +200,7 @@ def _render_final_plan() -> None:
         selected_items.add(recommendation["optional_lens"])
     leave_lenses = [lens for lens in lenses if lens not in selected_items]
     if leave_lenses:
+        st.write("Leave these lenses behind unless the brief changes:")
         st.write(", ".join(leave_lenses))
     else:
         st.write("No extra lenses listed.")
