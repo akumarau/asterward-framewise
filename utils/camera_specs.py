@@ -12,6 +12,8 @@ from typing import Any
 
 
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "camera_specs.json"
+TOKEN_BASE_SCORE = 40
+TOKEN_COVERAGE_MULTIPLIER = 30
 
 
 def _normalise(text: str) -> str:
@@ -36,7 +38,7 @@ def _token_score(query: str, candidate: str) -> int:
     if not overlap:
         return 0
     coverage = overlap / len(query_tokens)
-    return int(40 + (coverage * 30))
+    return int(TOKEN_BASE_SCORE + (coverage * TOKEN_COVERAGE_MULTIPLIER))
 
 
 def load_camera_specs(path: Path = DATA_PATH) -> dict[str, dict[str, Any]]:

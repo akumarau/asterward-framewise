@@ -11,6 +11,7 @@ from typing import Any
 GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"
 FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
 KNOWN_LOCATIONS_PATH = Path(__file__).resolve().parents[1] / "data" / "known_locations.json"
+COORDINATE_PRECISION = 5
 
 
 @dataclass
@@ -86,7 +87,7 @@ def merge_location_candidates(
     merged: list[LocationResult] = []
     seen: set[tuple[int, int]] = set()
     for item in [*geocoded, *fallback]:
-        key = (round(item.latitude, 5), round(item.longitude, 5))
+        key = (round(item.latitude, COORDINATE_PRECISION), round(item.longitude, COORDINATE_PRECISION))
         if key in seen:
             continue
         seen.add(key)

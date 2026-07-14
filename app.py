@@ -228,7 +228,7 @@ st.set_page_config(
 )
 
 st.title("📷 Camera Gear Scout")
-st.caption("Plan a smaller, smarter photo kit using guided matching and confirmation before generating recommendations.")
+st.caption("Plan a smaller, smarter photo kit with guided matching and confirmation before generating recommendations.")
 
 with st.sidebar:
     st.header("Flow")
@@ -381,7 +381,7 @@ if st.session_state.workflow_step == "review":
     location_candidates = review.get("location_candidates", [])
     if st.session_state.inputs["location_query"].strip():
         if review.get("geocode_error"):
-            st.info(f"Live geocoding was unavailable: {review['geocode_error']}. Showing fallback/local matches when possible.")
+            st.info("Live geocoding is temporarily unavailable. Showing fallback/local matches when possible.")
         if location_candidates:
             location_labels = [f"{item.label} ({item.latitude:.5f}, {item.longitude:.5f})" for item in location_candidates]
             review["location_index"] = st.selectbox(
