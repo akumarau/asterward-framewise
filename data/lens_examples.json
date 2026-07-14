@@ -1,0 +1,38 @@
+{
+  "Sony full-frame example": [
+    "Sony FE 16-35mm f/2.8 GM II",
+    "Sony FE 24-70mm f/2.8 GM II",
+    "Sony FE 70-200mm f/2.8 GM OSS II",
+    "Sony FE 35mm f/1.4 GM",
+    "Sony FE 85mm f/1.4 GM II",
+    "Sony FE 200-600mm f/5.6-6.3 G OSS"
+  ],
+  "Canon RF example": [
+    "Canon RF 15-35mm f/2.8L IS USM",
+    "Canon RF 24-70mm f/2.8L IS USM",
+    "Canon RF 70-200mm f/2.8L IS USM",
+    "Canon RF 35mm f/1.4L VCM",
+    "Canon RF 85mm f/1.2L USM",
+    "Canon RF 100-500mm f/4.5-7.1L IS USM"
+  ],
+  "Nikon Z example": [
+    "Nikon Z 14-24mm f/2.8 S",
+    "Nikon Z 24-70mm f/2.8 S",
+    "Nikon Z 70-200mm f/2.8 VR S",
+    "Nikon Z 35mm f/1.8 S",
+    "Nikon Z 85mm f/1.2 S",
+    "Nikon Z 180-600mm f/5.6-6.3 VR"
+  ],
+  "Fujifilm X example": [
+    "Fujifilm XF 10-24mm f/4 R OIS WR",
+    "Fujifilm XF 16-55mm f/2.8 R LM WR II",
+    "Fujifilm XF 50-140mm f/2.8 R LM OIS WR",
+    "Fujifilm XF 23mm f/1.4 R LM WR",
+    "Fujifilm XF 56mm f/1.2 R WR",
+    "Fujifilm XF 150-600mm f/5.6-8 R LM OIS WR"
+  ],
+  "Ricoh fixed-lens example": [
+    "Ricoh GR III 18.3mm f/2.8 fixed lens (28mm equivalent)",
+    "Ricoh GR IIIx 26.1mm f/2.8 fixed lens (40mm equivalent)"
+  ]
+}

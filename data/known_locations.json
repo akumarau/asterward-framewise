@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Three Sisters Walk",
+    "country": "Australia",
+    "admin1": "New South Wales",
+    "latitude": -33.732109,
+    "longitude": 150.312042,
+    "timezone": "Australia/Sydney",
+    "source": "Built-in landmark fallback",
+    "aliases": [
+      "three sisters",
+      "three sisters blue mountains",
+      "three sisters katoomba",
+      "echo point three sisters",
+      "three sisters walk"
+    ]
+  }
+]

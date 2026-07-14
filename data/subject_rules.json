@@ -1,0 +1,258 @@
+{
+  "Portraits": {
+    "preferred_focal_ranges": [
+      "50mm",
+      "85mm",
+      "70-200mm"
+    ],
+    "lens_keywords": [
+      "50",
+      "85",
+      "70-200",
+      "70 to 200",
+      "portrait"
+    ],
+    "default_lens_advice": "Use 50mm, 85mm, or 70-200mm equivalents. Choose 85mm or 70-200mm for flattering compression and clean backgrounds.",
+    "composition": [
+      "Place the eyes on the upper third and leave looking room in the direction of gaze.",
+      "Use distance between subject and background to increase separation.",
+      "Shoot near open shade or window light; avoid harsh midday top light."
+    ],
+    "techniques": [
+      "Use Eye AF / subject detection if available.",
+      "Start around f/1.8-f/2.8 for separation, stopping down for groups.",
+      "Use flash or reflector only if it improves catchlights and does not break venue rules."
+    ]
+  },
+  "Wildlife / Birds": {
+    "preferred_focal_ranges": [
+      "400-600mm",
+      "200-600mm",
+      "teleconverter"
+    ],
+    "lens_keywords": [
+      "200-600",
+      "200 to 600",
+      "600",
+      "400",
+      "teleconverter",
+      "tc"
+    ],
+    "default_lens_advice": "Use the longest reliable autofocus lens available. 400-600mm is usually the practical range for birds and distant wildlife.",
+    "composition": [
+      "Keep space in the frame in the direction the animal is moving or looking.",
+      "Get low where safe to bring the subject closer to eye level.",
+      "Look for clean backgrounds before the action starts."
+    ],
+    "techniques": [
+      "Use continuous AF, animal/bird detection, and burst shooting.",
+      "Start at 1/1000s for perched birds and 1/2000s+ for flight.",
+      "Use Auto ISO with a shutter-speed floor rather than letting shutter speed drop too low."
+    ]
+  },
+  "Sports / Action": {
+    "preferred_focal_ranges": [
+      "70-200mm",
+      "200-600mm",
+      "24-70mm"
+    ],
+    "lens_keywords": [
+      "70-200",
+      "70 to 200",
+      "200-600",
+      "200 to 600",
+      "24-70",
+      "24 to 70"
+    ],
+    "default_lens_advice": "Use 70-200mm for sideline or indoor sports; add longer reach for field sports or motorsport.",
+    "composition": [
+      "Frame slightly loose to allow for unpredictable movement.",
+      "Shoot from a position where backgrounds are clean and action comes toward you.",
+      "Capture peak gesture, ball contact, landing, celebration, or reaction."
+    ],
+    "techniques": [
+      "Use continuous AF with tracking and high-speed burst.",
+      "Start at 1/1000s; go 1/2000s+ for fast motorsport or birds-in-flight-like action.",
+      "Pre-focus on zones where action repeats."
+    ]
+  },
+  "Landscape": {
+    "preferred_focal_ranges": [
+      "12-24mm",
+      "24-70mm",
+      "70-200mm"
+    ],
+    "lens_keywords": [
+      "12-24",
+      "12 to 24",
+      "24-70",
+      "24 to 70",
+      "70-200",
+      "70 to 200",
+      "wide"
+    ],
+    "default_lens_advice": "Use a wide zoom for foreground-led compositions, a standard zoom for flexibility, and telephoto only for compressed distant details.",
+    "composition": [
+      "Use foreground, midground, and background layers.",
+      "Watch horizon placement; avoid splitting the image in half unless symmetry is the point.",
+      "Use leading lines, weather, and side light to add depth."
+    ],
+    "techniques": [
+      "Use a tripod for blue hour, sunrise, sunset, or focus stacking.",
+      "Use CPL for reflections and foliage, but avoid uneven skies on ultra-wide lenses.",
+      "Bracket exposures when sky-to-land contrast is high."
+    ]
+  },
+  "Architecture / Interiors": {
+    "preferred_focal_ranges": [
+      "12-24mm",
+      "14mm",
+      "24-70mm"
+    ],
+    "lens_keywords": [
+      "12-24",
+      "12 to 24",
+      "14",
+      "24-70",
+      "24 to 70",
+      "wide"
+    ],
+    "default_lens_advice": "Use an ultra-wide lens for tight interiors and a standard zoom for detail frames. Keep the camera level to reduce converging verticals.",
+    "composition": [
+      "Keep verticals straight unless you deliberately want drama.",
+      "Use symmetry, doorways, frames, and repeating patterns.",
+      "Move the camera position before zooming; small shifts change perspective strongly indoors."
+    ],
+    "techniques": [
+      "Use tripod and low ISO when permitted.",
+      "Bracket exposures for windows and bright fixtures.",
+      "Check edge distortion and avoid placing people at the extreme corners on ultra-wide lenses."
+    ]
+  },
+  "Street / Travel": {
+    "preferred_focal_ranges": [
+      "24-70mm",
+      "35mm",
+      "50mm"
+    ],
+    "lens_keywords": [
+      "24-70",
+      "24 to 70",
+      "35",
+      "50"
+    ],
+    "default_lens_advice": "Use a flexible standard zoom or a 35mm equivalent prime for a light, responsive walk-around kit.",
+    "composition": [
+      "Build frames around gestures, layers, reflections, signs, and light pockets.",
+      "Keep backgrounds intentional; wait for the right subject to enter the frame.",
+      "Use scale: include people, vehicles, or buildings to communicate place."
+    ],
+    "techniques": [
+      "Use aperture priority with a minimum shutter speed.",
+      "Pre-set exposure compensation for backlight or bright streets.",
+      "Carry less so you can move and react quickly."
+    ]
+  },
+  "Events / Stage": {
+    "preferred_focal_ranges": [
+      "24-70mm",
+      "70-200mm",
+      "35mm"
+    ],
+    "lens_keywords": [
+      "24-70",
+      "24 to 70",
+      "70-200",
+      "70 to 200",
+      "35",
+      "50",
+      "85"
+    ],
+    "default_lens_advice": "Use 24-70mm for context and groups, 70-200mm for stage/speeches/candid reactions, and a fast 35mm or 50mm if light is very low.",
+    "composition": [
+      "Mix establishing shots, medium moments, reactions, and tight details.",
+      "Shoot from the edges to avoid blocking guests.",
+      "Use negative space for signage, screens, or environmental context."
+    ],
+    "techniques": [
+      "Check flash rules before using flash.",
+      "Use silent or electronic shutter only if banding is not a problem under LED light.",
+      "Use Auto ISO and maintain shutter speed high enough for gestures and speaker movement."
+    ]
+  },
+  "Macro / Details": {
+    "preferred_focal_ranges": [
+      "90-105mm macro",
+      "100mm macro"
+    ],
+    "lens_keywords": [
+      "macro",
+      "100",
+      "90",
+      "105"
+    ],
+    "default_lens_advice": "Use a true macro lens around 90-105mm for working distance and controllable backgrounds.",
+    "composition": [
+      "Fill the frame with shape, texture, repetition, or one clear detail.",
+      "Align the sensor plane with the subject plane when you need more of the subject sharp.",
+      "Simplify the background; tiny distractions become large at macro distances."
+    ],
+    "techniques": [
+      "Use flash, diffuser, or reflector to control tiny shadows.",
+      "Stop down more than usual, but watch diffraction.",
+      "Use tripod, focus stacking, or burst shooting when wind is present."
+    ]
+  },
+  "Astrophotography": {
+    "preferred_focal_ranges": [
+      "14mm",
+      "12-24mm",
+      "telescope"
+    ],
+    "lens_keywords": [
+      "14",
+      "12-24",
+      "12 to 24",
+      "telescope",
+      "astro"
+    ],
+    "default_lens_advice": "For landscape astro use a fast ultra-wide lens. For deep-sky use a telescope/mount workflow instead of normal handheld/event gear.",
+    "composition": [
+      "Scout foreground before dark and avoid unsafe movement at night.",
+      "Use the Milky Way, moon phase, and foreground shapes to anchor the frame.",
+      "Keep artificial lights out of the frame unless they are intentional."
+    ],
+    "techniques": [
+      "Use manual focus with magnified live view on a bright star.",
+      "Start with 10-15s on ultra-wide full-frame lenses, then adjust after checking star trailing.",
+      "Use intervalometer and red headlamp; add dew control for longer sessions."
+    ]
+  },
+  "Product / Food": {
+    "preferred_focal_ranges": [
+      "50mm",
+      "85mm",
+      "100mm macro",
+      "24-70mm"
+    ],
+    "lens_keywords": [
+      "50",
+      "85",
+      "100",
+      "macro",
+      "24-70",
+      "24 to 70"
+    ],
+    "default_lens_advice": "Use 50mm/85mm for natural perspective and 100mm macro for small details, jewellery, textures, and food closeups.",
+    "composition": [
+      "Control the background, props, and edge clutter before adjusting camera settings.",
+      "Use diagonals, repetition, and negative space for commercial-looking frames.",
+      "Keep labels readable and hero details sharp."
+    ],
+    "techniques": [
+      "Use soft side light and flags/reflectors to shape highlights.",
+      "Use tripod for repeatable framing.",
+      "Stop down enough for the product depth; use focus stacking for small objects."
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "sony alpha 1 mark ii": {
+    "display_name": "Sony Alpha 1 II / Alpha 1 Mark II",
+    "aliases": [
+      "sony a1 ii",
+      "sony alpha 1 ii",
+      "sony alpha 1 mark ii",
+      "sony ilce-1m2",
+      "ilce-1m2",
+      "sony a1ii",
+      "sony a1m2",
+      "a1ii",
+      "a1m2"
+    ],
+    "megapixels": 50.1,
+    "max_resolution_px": [
+      8640,
+      5760
+    ],
+    "sensor": "35mm full-frame stacked CMOS",
+    "source": "Sony official specs"
+  },
+  "sony alpha 1": {
+    "display_name": "Sony Alpha 1",
+    "aliases": [
+      "sony a1",
+      "sony alpha 1",
+      "sony ilce-1",
+      "ilce-1",
+      "a1"
+    ],
+    "megapixels": 50.1,
+    "max_resolution_px": [
+      8640,
+      5760
+    ],
+    "sensor": "35mm full-frame stacked CMOS",
+    "source": "Sony official specs"
+  },
+  "sony alpha 7r v": {
+    "display_name": "Sony Alpha 7R V",
+    "aliases": [
+      "sony a7r v",
+      "sony alpha 7r v",
+      "sony ilce-7rm5",
+      "ilce-7rm5",
+      "sony a7rv",
+      "sony a7r5",
+      "a7rv",
+      "a7r5"
+    ],
+    "megapixels": 61.0,
+    "max_resolution_px": [
+      9504,
+      6336
+    ],
+    "sensor": "35mm full-frame CMOS",
+    "source": "Seed data; verify before production"
+  },
+  "canon eos r5 mark ii": {
+    "display_name": "Canon EOS R5 Mark II",
+    "aliases": [
+      "canon r5 mark ii",
+      "canon eos r5 ii",
+      "eos r5 mark ii",
+      "canon r5ii",
+      "canon r5m2",
+      "r5ii",
+      "eos r5ii"
+    ],
+    "megapixels": 45.0,
+    "max_resolution_px": [
+      8192,
+      5464
+    ],
+    "sensor": "35mm full-frame CMOS",
+    "source": "Seed data; verify before production"
+  },
+  "nikon z8": {
+    "display_name": "Nikon Z8",
+    "aliases": [
+      "nikon z 8",
+      "nikon z8"
+    ],
+    "megapixels": 45.7,
+    "max_resolution_px": [
+      8256,
+      5504
+    ],
+    "sensor": "35mm full-frame stacked CMOS",
+    "source": "Seed data; verify before production"
+  },
+  "fujifilm x-t5": {
+    "display_name": "Fujifilm X-T5",
+    "aliases": [
+      "fuji x-t5",
+      "fujifilm xt5",
+      "x-t5",
+      "fuji xt5",
+      "xt5"
+    ],
+    "megapixels": 40.2,
+    "max_resolution_px": [
+      7728,
+      5152
+    ],
+    "sensor": "APS-C X-Trans CMOS",
+    "source": "Seed data; verify before production"
+  },
+  "sony alpha 7r vi": {
+    "display_name": "Sony Alpha 7R VI",
+    "aliases": [
+      "sony a7r vi",
+      "sony a7r6",
+      "sony a7r 6",
+      "sony a7rvi",
+      "sony alpha 7r vi",
+      "sony alpha 7r6",
+      "sony ilce-7rm6",
+      "ilce-7rm6",
+      "a7r vi",
+      "a7r6",
+      "a7rvi"
+    ],
+    "megapixels": 66.8,
+    "max_resolution_px": [
+      9984,
+      6656
+    ],
+    "sensor": "35mm full-frame fully-stacked Exmor RS CMOS",
+    "source": "Sony official specs"
+  }
+}
