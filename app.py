@@ -223,7 +223,7 @@ st.set_page_config(
 )
 
 st.title("📷 Camera Gear Scout")
-st.caption("Plan a smaller, smarter photo kit with guided matching and confirmation before recommendations.")
+st.caption("Plan a smaller, smarter photo kit using guided matching and confirmation before generating recommendations.")
 
 with st.sidebar:
     st.header("Flow")
@@ -324,6 +324,8 @@ if st.session_state.workflow_step == "review":
             st.session_state.camera_accepted = True
         if c2.button("Choose another option", key="change_camera"):
             st.session_state.camera_accepted = False
+            if len(camera_candidates) > 1:
+                review["camera_index"] = (review["camera_index"] + 1) % len(camera_candidates)
         if c3.button("Edit input", key="edit_camera"):
             st.session_state.workflow_step = "inputs"
     else:
@@ -373,6 +375,8 @@ if st.session_state.workflow_step == "review":
                 st.session_state.location_accepted = True
             if l2.button("Choose another option", key="change_location"):
                 st.session_state.location_accepted = False
+                if len(location_candidates) > 1:
+                    review["location_index"] = (review["location_index"] + 1) % len(location_candidates)
             if l3.button("Edit input", key="edit_location"):
                 st.session_state.workflow_step = "inputs"
         else:

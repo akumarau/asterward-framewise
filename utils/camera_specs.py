@@ -35,7 +35,7 @@ def _token_score(query: str, candidate: str) -> int:
     overlap = len(query_tokens & candidate_tokens)
     if not overlap:
         return 0
-    coverage = overlap / max(1, len(query_tokens))
+    coverage = overlap / len(query_tokens)
     return int(40 + (coverage * 30))
 
 
