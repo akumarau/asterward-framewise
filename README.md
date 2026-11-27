@@ -1,4 +1,4 @@
-# FrameWise
+# Asterward Framewise
 
 **Your intelligent photography advisor.**
 
